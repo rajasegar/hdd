@@ -1,61 +1,27 @@
 main
-  #myCarousel.carousel.slide(data-bs-ride='carousel')
-    .carousel-indicators
-      button.active(type='button' data-bs-target='#myCarousel' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
-      button(type='button' data-bs-target='#myCarousel' data-bs-slide-to='1' aria-label='Slide 2')
-      button(type='button' data-bs-target='#myCarousel' data-bs-slide-to='2' aria-label='Slide 3')
-    .carousel-inner
-      .carousel-item.active
-        svg.bd-placeholder-img(width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' preserveAspectRatio='xMidYMid slice' focusable='false')
-          rect(width='100%' height='100%' fill='#777')
-        .container
-          .carousel-caption.text-start
-            h1 Example headline.
-            p Some representative placeholder content for the first slide of the carousel.
-            p
-              a.btn.btn-lg.btn-primary(href='#') Sign up today
-      .carousel-item
-        svg.bd-placeholder-img(width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' preserveAspectRatio='xMidYMid slice' focusable='false')
-          rect(width='100%' height='100%' fill='#777')
-        .container
-          .carousel-caption
-            h1 Another example headline.
-            p Some representative placeholder content for the second slide of the carousel.
-            p
-              a.btn.btn-lg.btn-primary(href='#') Learn more
-      .carousel-item
-        svg.bd-placeholder-img(width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' aria-hidden='true' preserveAspectRatio='xMidYMid slice' focusable='false')
-          rect(width='100%' height='100%' fill='#777')
-        .container
-          .carousel-caption.text-end
-            h1 One more for good measure.
-            p Some representative placeholder content for the third slide of this carousel.
-            p
-              a.btn.btn-lg.btn-primary(href='#') Browse gallery
-    button.carousel-control-prev(type='button' data-bs-target='#myCarousel' data-bs-slide='prev')
-      span.carousel-control-prev-icon(aria-hidden='true')
-      span.visually-hidden Previous
-    button.carousel-control-next(type='button' data-bs-target='#myCarousel' data-bs-slide='next')
-      span.carousel-control-next-icon(aria-hidden='true')
-      span.visually-hidden Next
+  #logo
+    .text-center
+      <span class="text-3d">&lt;HDD/&gt;</span>
+    h2.text-white.text-center HTML Driven Development
+    p.text-center.text-white Tackling complexity in the heart of the Web
   .container.marketing
     .row
       .col-lg-4
-        img.bd-placeholder-img.rounded-circle(width='140' height='140' src="/images/values.jpg" aria-label='Values' preserveAspectRatio='xMidYMid slice' focusable='false')
+        img.bd-placeholder-img.rounded-circle(width='140' height='140' src="/images/values-140.jpg" aria-label='Values')
         h2 Values
         p
           | Values are the roots of the things we like and don't like in a situation.
         p
           a.btn.btn-dark(href='/values') View details »
       .col-lg-4
-        img.bd-placeholder-img.rounded-circle(width='140' height='140' src="/images/principles.jpg" aria-label='Principles' preserveAspectRatio='xMidYMid slice' focusable='false')
+        img.bd-placeholder-img.rounded-circle(width='140' height='140' src="/images/principles-140.jpg" aria-label='Principles')
         h2 Principles
         p
           | Bridging the gap between values and practices are principles. Principles are domain-specific guidelines for life.
         p
           a.btn.btn-dark(href='/principles') View details »
       .col-lg-4
-        img.bd-placeholder-img.rounded-circle(width='140' height='140' src="/images/practices.jpg" aria-label='Principles' preserveAspectRatio='xMidYMid slice' focusable='false')
+        img.bd-placeholder-img.rounded-circle(width='140' height='140' src="/images/practices-140.jpg" aria-label='Principles')
         h2 Practices
         p Practices are the things you do day-to-day. Specifying practices is useful because they are clear and objective.
         p
@@ -66,26 +32,34 @@ main
           h2.featurette-heading
             | Server-Side Rendering
           p.lead
-            | Server-side rendering is the most common method for displaying information onto the screen. It works by converting HTML files in the server into usable information for the browser. Whenever you visit a website, your browser makes a request to the server that contains the contents of the website.
+            | <a href="https://developers.google.com/web/updates/2019/02/rendering-on-the-web#server-rendering" target="_blank">Server-side rendering</a> is the most common method for displaying information onto the screen. It works by converting HTML files in the server into usable information for the browser. Whenever you visit a website, your browser makes a request to the server that contains the contents of the website.
+          p.lead The server returns a static web page fully complied with dynamic data ready to display on the browser. The fetching of the dynamic data is done by server-side scripts written by server-side languages. This is how we used to render web pages in the old days (PHP/ Perl/CGI), and it has recently gained traction with technologies, such as React and Express. It is SEO friendly and great for devices with low power. 
+
+
         .col-md-5
-          img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src="/images/ssr.png" aria-label='Placeholder: 500x500' preserveAspectRatio='xMidYMid slice' focusable='false')
+          a(href="/images/ssr.png")
+            img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src="/images/ssr-500.jpg" aria-label='Placeholder: 500x500')
       hr.featurette-divider
       .row.featurette
         .col-md-7.order-md-2
           h2.featurette-heading
             | Progressive HTML Rendering
           p.lead
-            | Progressive HTML rendering is a technique to improve the performance of websites that involves sending an HTTP response for an HTML page in multiple flushes. This improves both the actual load time, as well as the perceived load time.  
+            | <a href="https://dev.to/ryansolid/server-rendering-in-javascript-optimizing-performance-1jnk" target="_blank">Progressive HTML rendering</a> is a technique to improve the performance of websites that involves sending an HTTP response for an HTML page in multiple flushes. This improves both the actual load time, as well as the perceived load time.  
+          p.lead Netscape 1.0's early beta versions introduced the "progressive rendering" of pages and images, meaning that the page begins to appear and the text can be read even before all of the text and/or images have been completely downloaded.
+
         .col-md-5.order-md-1
-          img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src="/images/progressive-html.jpg" aria-label='Placeholder: 500x500' preserveAspectRatio='xMidYMid slice' focusable='false')
+          a(href="/images/progressive-html.jpg")
+            img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src="/images/phtml-500.jpg" aria-label='Placeholder: 500x500')
       hr.featurette-divider
       .row.featurette
         .col-md-7
           h2.featurette-heading
             | Progressive enhancement
           p.lead
-            | Progressive enhancement is a design and development strategy for websites that starts with a simple base and adds step-by-step improvements for more powerful systems. It allows developers to design websites that take full advantage of the capabilities of modern browsers and devices. At the same time, it avoids performance and display problems with less powerful devices and older browsers with limited functionality.
+            | <a href="https://en.wikipedia.org/wiki/Progressive_enhancement" target="_blank">Progressive enhancement</a> is a design and development strategy for websites that starts with a simple base and adds step-by-step improvements for more powerful systems. It allows developers to design websites that take full advantage of the capabilities of modern browsers and devices. At the same time, it avoids performance and display problems with less powerful devices and older browsers with limited functionality.
         .col-md-5
-          img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src="/images/progressive-enhancement.png" aria-label='Placeholder: 500x500' preserveAspectRatio='xMidYMid slice' focusable='false')
+          a(href="/images/progressive-enhancement.png")
+            img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src="/images/pe-500.jpg" aria-label='Placeholder: 500x500')
       hr.featurette-divider
 

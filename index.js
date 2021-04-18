@@ -19,8 +19,6 @@ app.use(function contentType(req, res, next) {
 });
 
 
-stream.openHtmlOpenHead(true);
-//stream.closeHeadOpenBody('_head');
 stream.closeBodyCloseHtml(true);
 stream.streamBefore('_header');
 stream.streamAfter('_footer');
