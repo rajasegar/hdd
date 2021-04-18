@@ -38,85 +38,54 @@ main
     button.carousel-control-next(type='button' data-bs-target='#myCarousel' data-bs-slide='next')
       span.carousel-control-next-icon(aria-hidden='true')
       span.visually-hidden Next
-  //
-    Marketing messaging and featurettes
-    ==================================================
-  // Wrap the rest of the page in another container to center all the content.
   .container.marketing
-    // Three columns of text below the carousel
     .row
       .col-lg-4
-        svg.bd-placeholder-img.rounded-circle(width='140' height='140' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder: 140x140' preserveAspectRatio='xMidYMid slice' focusable='false')
-          title Placeholder
-          rect(width='100%' height='100%' fill='#777')
-          text(x='50%' y='50%' fill='#777' dy='.3em') 140x140
+        img.bd-placeholder-img.rounded-circle(width='140' height='140' src="/images/values.jpg" aria-label='Values' preserveAspectRatio='xMidYMid slice' focusable='false')
         h2 Values
         p
           | Values are the roots of the things we like and don't like in a situation.
         p
-          a.btn.btn-secondary(href='#') View details »
-      // /.col-lg-4
+          a.btn.btn-dark(href='/values') View details »
       .col-lg-4
-        svg.bd-placeholder-img.rounded-circle(width='140' height='140' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder: 140x140' preserveAspectRatio='xMidYMid slice' focusable='false')
-          title Placeholder
-          rect(width='100%' height='100%' fill='#777')
-          text(x='50%' y='50%' fill='#777' dy='.3em') 140x140
+        img.bd-placeholder-img.rounded-circle(width='140' height='140' src="/images/principles.jpg" aria-label='Principles' preserveAspectRatio='xMidYMid slice' focusable='false')
         h2 Principles
         p
           | Bridging the gap between values and practices are principles. Principles are domain-specific guidelines for life.
         p
-          a.btn.btn-secondary(href='#') View details »
-      // /.col-lg-4
+          a.btn.btn-dark(href='/principles') View details »
       .col-lg-4
-        svg.bd-placeholder-img.rounded-circle(width='140' height='140' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder: 140x140' preserveAspectRatio='xMidYMid slice' focusable='false')
-          title Placeholder
-          rect(width='100%' height='100%' fill='#777')
-          text(x='50%' y='50%' fill='#777' dy='.3em') 140x140
+        img.bd-placeholder-img.rounded-circle(width='140' height='140' src="/images/practices.jpg" aria-label='Principles' preserveAspectRatio='xMidYMid slice' focusable='false')
         h2 Practices
         p Practices are the things you do day-to-day. Specifying practices is useful because they are clear and objective.
         p
-          a.btn.btn-secondary(href='#') View details »
-      // /.col-lg-4
-      // /.row
-      // START THE FEATURETTES
+          a.btn.btn-dark(href='/practices') View details »
       hr.featurette-divider
       .row.featurette
         .col-md-7
           h2.featurette-heading
             | Server-Side Rendering
           p.lead
-            | Some great placeholder content for the first featurette here. Imagine some exciting prose here.
+            | Server-side rendering is the most common method for displaying information onto the screen. It works by converting HTML files in the server into usable information for the browser. Whenever you visit a website, your browser makes a request to the server that contains the contents of the website.
         .col-md-5
-          svg.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder: 500x500' preserveAspectRatio='xMidYMid slice' focusable='false')
-            title Placeholder
-            rect(width='100%' height='100%' fill='#eee')
-            text(x='50%' y='50%' fill='#aaa' dy='.3em') 500x500
+          img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src="/images/ssr.png" aria-label='Placeholder: 500x500' preserveAspectRatio='xMidYMid slice' focusable='false')
       hr.featurette-divider
       .row.featurette
         .col-md-7.order-md-2
           h2.featurette-heading
             | Progressive HTML Rendering
           p.lead
-            | Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.
+            | Progressive HTML rendering is a technique to improve the performance of websites that involves sending an HTTP response for an HTML page in multiple flushes. This improves both the actual load time, as well as the perceived load time.  
         .col-md-5.order-md-1
-          svg.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder: 500x500' preserveAspectRatio='xMidYMid slice' focusable='false')
-            title Placeholder
-            rect(width='100%' height='100%' fill='#eee')
-            text(x='50%' y='50%' fill='#aaa' dy='.3em') 500x500
+          img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src="/images/progressive-html.jpg" aria-label='Placeholder: 500x500' preserveAspectRatio='xMidYMid slice' focusable='false')
       hr.featurette-divider
       .row.featurette
         .col-md-7
           h2.featurette-heading
             | Progressive enhancement
           p.lead
-            | And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.
+            | Progressive enhancement is a design and development strategy for websites that starts with a simple base and adds step-by-step improvements for more powerful systems. It allows developers to design websites that take full advantage of the capabilities of modern browsers and devices. At the same time, it avoids performance and display problems with less powerful devices and older browsers with limited functionality.
         .col-md-5
-          svg.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder: 500x500' preserveAspectRatio='xMidYMid slice' focusable='false')
-            title Placeholder
-            rect(width='100%' height='100%' fill='#eee')
-            text(x='50%' y='50%' fill='#aaa' dy='.3em') 500x500
+          img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src="/images/progressive-enhancement.png" aria-label='Placeholder: 500x500' preserveAspectRatio='xMidYMid slice' focusable='false')
       hr.featurette-divider
-      // /END THE FEATURETTES
-      // /.container
-      // FOOTER
 
