@@ -44,6 +44,10 @@ app.get('/credits', stream.stream(), (req,res) => {
   res.render('credits');
 });
 
+app.get('/tools', stream.stream(), (req,res) => {
+  res.render('tools');
+});
+
 app.listen(PORT);
 console.log('Listening on port: ', PORT);
 
