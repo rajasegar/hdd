@@ -40,6 +40,14 @@ app.get('/practices', stream.stream(), (req,res) => {
   res.render('practices');
 });
 
+app.get('/practices/progressive-html', stream.stream(), (req,res) => {
+  res.render('practices/progressive-html');
+});
+
+app.get('/practices/html-over-the-wire', stream.stream(), (req,res) => {
+  res.render('practices/html-over-the-wire');
+});
+
 app.get('/credits', stream.stream(), (req,res) => {
   res.render('credits');
 });

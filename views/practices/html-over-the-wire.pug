@@ -1,0 +1,40 @@
+include ../_youtube-card
+mixin lg-link(href)
+  a.list-group-item.list-group-item-action(href=href, target="_blank")
+    block
+main
+  section.py-2.text-center.container
+    .row.py-lg-5
+      .col-lg-6.col-md-8.mx-auto
+        h1.fw-light HTML over the wire
+        p.lead.text-muted
+          | Progressive HTML rendering is a technique to improve the performance of websites that involves sending an HTTP response for an HTML page in multiple flushes. This improves both the actual load time, as well as the perceived load time.
+        //-p
+          a.btn.btn-primary.my-2(href='#') Main call to action
+          a.btn.btn-secondary.my-2(href='#') Secondary action
+    h2 Talks & Videos
+  .album.py-2.bg-light
+    .container
+      .row.row-cols-1.row-cols-sm-2.row-cols-md-3.g-3
+        +youtube-card('CLA2gQDegj0',27,2017)
+          | Marko & NodeJS: STREAMING, ASYNC AND UI COMPONENTS! OH MY! A Talk by Patrick Steele-Idem at NodeSummit, San Francisco.
+        +youtube-card('i6eZA8Y_GgA',72, 2017)
+          | Building the UI - a comparison of React, Vue, and Marko - A Talk by Patrick Steele-Idem at Node.js Denver/Boulder/Ft. Collins.
+        +youtube-card('aRaQe9n1lPk',25,2016)
+          | Progressive Rendering – how to make your app render sooner - Talk by Denis Rechkunov at JSConf Iceland.
+        +youtube-card('iYW7vKCqN6g',22,2020)
+          | Progressive Rendering: Improve Performance on Slower Networks - Dinesh Pandiyan | JSConf Hawaii.
+  section.py-2.container
+    h2.text-center Blogs & Articles
+    .list-group
+      +lg-link('https://tech.ebayinc.com/engineering/async-fragments-rediscovering-progressive-html-rendering-with-marko/') Async Fragments: Rediscovering Progressive HTML Rendering with Marko
+      +lg-link('http://blog.codinghorror.com/the-lost-art-of-progressive-html-rendering/') The Lost Art of Progressive HTML Rendering
+      +lg-link('https://developer.yahoo.com/performance/rules.html#flush') Best Practices for Speeding Up Your Web Site
+      +lg-link('http://www.phpied.com/progressive-rendering-via-multiple-flushes/') Progressive rendering via multiple flushes
+      +lg-link('http://strongloop.com/strongblog/bypassing-express-view-rendering-for-speed-and-modularity/') Bypassing Express View Rendering for Speed and Modularity
+  section.py-2.container
+    h2.text-center Demos & Source Code
+    .list-group
+      +lg-link('https://github.com/jpodwys/express-stream-demo') An express-stream demo app
+      +lg-link('https://github.com/flexdinesh/progressive-rendering') Demo — Stream portions of a webpage as chunks from the server 
+      +lg-link('https://github.com/patrick-steele-idem/express-view-streaming') Sample app that demonstrates streaming template rendering with Express

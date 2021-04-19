@@ -1,9 +1,17 @@
-mixin value-card()
+mixin value-card(title, url)
   .col-md-6
     .h-100.p-5.bg-light.border.rounded-3
+      h2 #{title}
       block
+      a.btn.btn-outline-secondary(
+        href=url
+        ) Know more
 
-mixin value-card-dark()
+mixin value-card-dark(title, url)
   .col-md-6
     .h-100.p-5.text-white.bg-dark.rounded-3
+      h2 #{title}
       block
+      a.btn.btn-outline-light(
+        href=url
+        ) Know more

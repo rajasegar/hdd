@@ -13,33 +13,19 @@ main
           rel="noopener"
           ) Know more
     .row.align-items-md-stretch
-      .col-md-6
-        .h-100.p-5.text-white.bg-dark.rounded-3
-          h2 Thin Clients
-          p
-            | Simplicity is the ultimate form of sophistication. Always strive for this particular value in all you do. This will make your life better. But, remember achieving simplicity is hard.
-          button.btn.btn-outline-light(type='button') Know more
-      .col-md-6
-        .h-100.p-5.bg-light.border.rounded-3
-          h2 HATEOAS
-          p
-            | Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-          button.btn.btn-outline-secondary(type='button') Know more
+      +value-card-dark('Thin Clients','#')
+        p
+          | Simplicity is the ultimate form of sophistication. Always strive for this particular value in all you do. This will make your life better. But, remember achieving simplicity is hard.
+      +value-card('HATEOAS','#')
+        p
+          | Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
       .mt-4
-      +value-card()
-        h2 Complexity Budget
+      +value-card('Complexity Budget','#')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-        button.btn.btn-outline-secondary(type='button') Know more
-      +value-card-dark()
-        h2 Locality of Behavior
+      +value-card-dark('Locality of Behavior','#')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-        button.btn.btn-outline-secondary(type='button') Know more
       .mt-4
-      +value-card-dark()
-        h2 Locality of Behavior
+      +value-card-dark('Locality of Behavior','#')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-        button.btn.btn-outline-secondary(type='button') Know more
-      +value-card()
-        h2 Accessible Routing
+      +value-card('Accessible Routing','#')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-        button.btn.btn-outline-secondary(type='button') Know more

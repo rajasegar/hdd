@@ -9,51 +9,31 @@ main
 
         button.btn.btn-primary.btn-lg(type='button') Know more
     .row.align-items-md-stretch
-      .col-md-6
-        .h-100.p-5.text-white.bg-dark.rounded-3
-          h2 Server-side Rendering
-          p
-            | Simplicity is the ultimate form of sophistication. Always strive for this particular value in all you do. This will make your life better. But, remember achieving simplicity is hard.
-          button.btn.btn-outline-light(type='button') Know more
-      .col-md-6
-        .h-100.p-5.bg-light.border.rounded-3
-          h2 HTML over the wire
-          p
-            | Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-          button.btn.btn-outline-secondary(type='button') Know more
+      +value-card-dark('Server-side Rendering','#')
+        p
+          | Server-side rendering is the most common method for displaying information onto the screen. It works by converting HTML files in the server into usable information for the browser. Whenever you visit a website, your browser makes a request to the server that contains the contents of the website.
+      +value-card('HTML over the wire','/practices/html-over-the-wire')
+        p
+          | HTML over the wire is an alternative approach to building modern web applications without using much JavaScript by sending HTML instead of JSON over the wire. This makes for fast first-load pages, keeps template rendering on the server, and allows for a simpler, more productive development experience in any programming language, without sacrificing any of the speed or responsiveness associated with a traditional single-page application.
       .mt-4
-      +value-card()
-        h2 Progressive HTML Rendering
+      +value-card('Progressive HTML Rendering', '/practices/progressive-html')
+        p  Progressive HTML rendering is a technique to improve the performance of websites that involves sending an HTTP response for an HTML page in multiple flushes. This improves both the actual load time, as well as the perceived load time.
+
+      +value-card-dark('Server side Routing','#')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-        button.btn.btn-outline-secondary(type='button') Know more
-      +value-card-dark()
-        h2 Server side Routing
-        p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-        button.btn.btn-outline-secondary(type='button') Know more
       .mt-4
-      +value-card-dark()
-        h2 Just Enough JavaScript
+
+      +value-card-dark('Just Enough JavaScript','#')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-        button.btn.btn-outline-secondary(type='button') Know more
-      +value-card()
-        h2 No Build / Compilation
+      +value-card('Optional Build / Compilation','#')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-        button.btn.btn-outline-secondary(type='button') Know more
       .mt-4
-      +value-card()
-        h2 Progressive Enhancement
+      +value-card('Progressive Enhancement','#')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-        button.btn.btn-outline-secondary(type='button') Know more
-      +value-card-dark()
-        h2 One Codebase
+      +value-card-dark('The Monolith','#')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-        button.btn.btn-outline-secondary(type='button') Know more
       .mt-4
-      +value-card-dark()
-        h2 No State on Client
+      +value-card-dark('Avoid State on Client','#')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-        button.btn.btn-outline-secondary(type='button') Know more
-      +value-card()
-        h2 Make use of CDN
+      +value-card('Make use of CDN','#')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-        button.btn.btn-outline-secondary(type='button') Know more
