@@ -11,7 +11,7 @@ devDependencies:
   eslint-plugin-prettier: 3.4.0_64fa1aa96df95a5df14fce32631d8e89
   nodemon: 2.0.7
   prettier: 2.2.1
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.12.11:
     dependencies:
