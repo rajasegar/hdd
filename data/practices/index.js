@@ -4,6 +4,10 @@ const progressiveHtml = require('./progressive-html');
 const ssr = require('./ssr');
 const serverRouting = require('./server-side-routing');
 const optionalBuild = require('./optional-build');
+const progressiveEnhancement = require('./progressive-enhancement');
+const monolith = require('./monolith');
+const cdn = require('./cdn');
+const avoidClientState = require('./avoid-state-on-client');
 
 module.exports = {
   'html-over-the-wire': htmlOverTheWire,
@@ -12,4 +16,8 @@ module.exports = {
   ssr,
   'server-side-routing': serverRouting,
   'optional-build': optionalBuild,
+  'progressive-enhancement': progressiveEnhancement,
+  monolith,
+  cdn,
+  'avoid-state-on-client': avoidClientState,
 };
