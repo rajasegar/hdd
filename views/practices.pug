@@ -1,13 +1,13 @@
 include _value-card
 main
   .container
-    .p-5.mb-4.bg-light.rounded-3
-      .container-fluid.py-5
+    .p-5.mb-4.rounded-3.bg-gray-dark.text-white
+      .container-fluid
         h1.display-5.fw-bold Practices
         p.col-md-8.fs-4
           | Practices are evidences of values. They are unproductive unless given purpose by values. They are situation dependent. If the situation changes, you choose different practices to meet those conditions. Applying a practice is a choice.
 
-        button.btn.btn-primary.btn-lg(type='button') Know more
+        button.btn.btn-light.btn-lg(type='button') Know more
     .row.align-items-md-stretch
       +value-card-dark('Server-side Rendering','/practices/ssr')
         p
@@ -20,20 +20,20 @@ main
         p  Progressive HTML rendering is a technique to improve the performance of websites that involves sending an HTTP response for an HTML page in multiple flushes. This improves both the actual load time, as well as the perceived load time.
 
       +value-card-dark('Server side Routing','/practices/server-side-routing')
-        p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
+        p Client-side routing sound more complicated, because it is. Server-side routing has been the standard for a long time, search engines are optimised for webpages that come from the server. 
       .mt-4
 
       +value-card-dark('Just Enough JavaScript','/practices/just-enough-javascript')
-        p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
+        p JavaScript was supposed to be sprinkled upon HTML and primarily used for interactivity and dynamism, nothing more, nothing less. 
       +value-card('Optional Build / Compilation','/practices/optional-build')
-        p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
+        p Bundling need not to be a mandatory practice in Web development. You only need to bundle when you want such as in production enviroments. With the advent of EcmaScript Modules, the new module standard for Javascript there are a lot of tools to avoid bundling for the client.
       .mt-4
       +value-card('Progressive Enhancement','/practices/progressive-enhancement')
-        p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
+        p  Progressive enhancement is a design and development strategy for websites that starts with a simple base and adds step-by-step improvements for more powerful systems. It allows developers to design websites that take full advantage of the capabilities of modern browsers and devices. 
       +value-card-dark('The Monolith','/practices/monolith')
-        p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
+        p  Collapse as many unnecessary conceptual models as possible. Eliminates as much needless abstraction as you can swing a hammer at. It’s a big fat no to distributing your system lest it truly prevents you from doing what really needs to be done.
       .mt-4
-      +value-card-dark('Avoid State on Client','/practices/avoid-state-on-client')
+      //-+value-card-dark('Avoid State on Client','/practices/avoid-state-on-client')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-      +value-card('Make use of CDN','/practices/cdn')
-        p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
+      +value-card-dark('Make use of CDN','/practices/cdn')
+        p  Content delivery networks (CDN’s) provide a great solution to this, serving assets such as image files from a network of data centres around the world. This means that in most cases, the largest files will be loaded from the CDN location in the users own region, reducing the distance that data is moving each time a page is loaded. Once again, this improves energy efficiency and improves page load times.

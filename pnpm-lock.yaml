@@ -1,5 +1,6 @@
 dependencies:
   compression: 1.7.4
+  cookie-parser: 1.4.5
   ejs: 3.1.6
   express: 4.17.1
   express-stream: 0.8.0
@@ -11,7 +12,7 @@ devDependencies:
   eslint-plugin-prettier: 3.4.0_64fa1aa96df95a5df14fce32631d8e89
   nodemon: 2.0.7
   prettier: 2.2.1
-lockfileVersion: 5.2
+lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.12.11:
     dependencies:
@@ -447,6 +448,15 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
+  /cookie-parser/1.4.5:
+    dependencies:
+      cookie: 0.4.0
+      cookie-signature: 1.0.6
+    dev: false
+    engines:
+      node: '>= 0.8.0'
+    resolution:
+      integrity: sha512-f13bPUj/gG/5mDr+xLmSxxDsB9DQiTIfhJS/sqjrmfAWiAN+x2O4i/XguTL9yDZ+/IFDanJ+5x7hC4CXT9Tdzw==
   /cookie-signature/1.0.6:
     dev: false
     resolution:
@@ -2269,6 +2279,7 @@ packages:
       integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 specifiers:
   compression: ^1.7.4
+  cookie-parser: ^1.4.5
   ejs: ^3.1.6
   eslint: ^7.24.0
   eslint-config-prettier: ^8.2.0

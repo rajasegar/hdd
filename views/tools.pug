@@ -3,8 +3,8 @@ main
   .container.marketing
     .row
       .col-md-12
-        .p-5.mb-4.bg-light.rounded-3
-          .container-fluid.py-1
+        .p-5.mb-4.rounded-3.bg-gray-dark.text-white
+          .container-fluid
             h1.display-5.fw-bold Tools
             p.col-md-8.fs-4
               | In this section, we will look at some of the amazing frameworks and libraries that promote some or most of the values of HTML Driven Development.
@@ -35,13 +35,13 @@ main
 
       hr.featurette-divider
 
-      +featurette('Marko','/images/marko-500.jpg','https://markojs.com')
+      +featurette('Marko','/images/marko-500.png','https://markojs.com')
         p.lead
           | <a href="https://markojs.com">Marko</a> is HTML re-imagined as a language for building dynamic and reactive user interfaces. Just about any valid HTML is valid Marko, but Marko extends the HTML language to allow building modern applications in a declarative way.
 
       hr.featurette-divider
 
-      +featurette-alt("Astro",'images/astro-500.jpg', 'https://astro.build')
+      +featurette-alt("Astro",'images/astro-500.png', 'https://astro.build')
         p.lead
           | Build faster websites with less client-side Javascript.  For a technology built on top of three different languages, the modern web seems to focus an awful lot on JavaScript. We don’t think it has to—and that’s certainly not a revolutionary concept.
 
@@ -51,22 +51,22 @@ main
 
       hr.featurette-divider
 
-      +featurette('Sockpuppet','images/sockpuppet-500.jpg', 'https://sockpuppet.argpar.se/')
+      +featurette('Sockpuppet','images/sockpuppet-500.png', 'https://sockpuppet.argpar.se/')
         p.lead
           | <a href="https://sockpuppet.argpar.se">Sockpuppet</a> is a new way to craft modern, reactive web interfaces with Django. We extend the capabilities of both Django and Stimulus by intercepting user interactions and passing them to Django over real-time websockets. These interactions are processed by Reflex actions that change application state. The current page is quickly re-rendered and the changes are sent to the client. The page is then morphed to reflect the new application state. This entire round-trip allows us to update the UI in 20-30ms without flicker or expensive page loads.
 
       hr.featurette-divider
-      +featurette-alt('Unpoly', 'images/unpoly-500.jpg', 'https://unpoly.com/')
+      +featurette-alt('Unpoly', 'images/unpoly-500.png', 'https://unpoly.com/')
         p.lead
           | The <a href="https://unpoly.com">unobtrusive JavaScript framework</a> for server-side web applications Unpoly enables fast and flexible frontends while keeping rendering logic on the server. It has no dependencies and plays nice with existing code.
 
       hr.featurette-divider
-      +featurette('Alpine.js', 'images/alpine-500.jpg','https://github.com/alpinejs/alpine')
+      +featurette('Alpine.js', 'images/alpine-500.png','https://github.com/alpinejs/alpine')
         p.lead
           | A rugged, minimal framework for composing JavaScript behavior in your markup. <a href="https://github.com/alpinejs/alpine">Alpine.js</a> offers you the reactive and declarative nature of big frameworks like Vue or React at a much lower cost. You get to keep your DOM, and sprinkle in behavior as you see fit.
 
       hr.featurette-divider
-      +featurette-alt('Inertia.js', 'images/inertia-500.jpg','https://inertiajs.com')
+      +featurette-alt('Inertia.js', 'images/inertia-500.png','https://inertiajs.com')
         p.lead
           | Build single-page apps, without building an API.  <a href="https://inertiajs.com">Inertia.js</a> lets you quickly build modern single-page React, Vue and Svelte apps using classic server-side routing and controllers.
         p.lead

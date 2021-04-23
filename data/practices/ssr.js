@@ -1,4 +1,5 @@
 module.exports = {
+  values: ['Simplicity', 'Performance', 'Energy Efficiency', 'Majestic Monolith'],
   videos: [
     {
       id: 'wYGoJ8R3nnM',

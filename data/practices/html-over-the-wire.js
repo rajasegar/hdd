@@ -1,4 +1,5 @@
 module.exports = {
+  values: ['Simplicity', 'Performance'],
   videos: [
     {
       id: 'eKY-QES1XQQ',
@@ -32,6 +33,19 @@ module.exports = {
       description: 'Rails Conf 2012 Keynote: Simplicity Matters by Rich Hickey',
     },
   ],
-  articles: [],
+  articles: [
+    {
+      url: 'https://m.signalvnoise.com/html-over-the-wire/',
+      title: 'HTML over the wire',
+    },
+    {
+      url: 'https://delitescere.medium.com/hotwire-html-over-the-wire-2c733487268c',
+      title: 'Hotwire: HTML Over The Wire - Josh Graham - Medium',
+    },
+    {
+      url: 'https://dev.to/rajasegar/html-over-the-wire-is-the-future-of-web-development-542c',
+      title: 'HTML over-the-wire is a promising future of Web Development',
+    },
+  ],
   demos: [],
 };

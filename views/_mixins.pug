@@ -1,3 +1,6 @@
-mixin lg-link(href)
-  a.list-group-item.list-group-item-action(href=href, target="_blank")
-    block
+mixin lg-link(article)
+  a.list-group-item.list-group-item-action(href=article.url, target="_blank")
+    | #{article.title}
+
+mixin value-tag(value)
+  span.mx-2.badge.bg-light.text-dark #{value}

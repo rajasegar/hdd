@@ -1,31 +1,35 @@
 include _value-card
 main
   .container
-    .p-5.mb-4.bg-light.rounded-3
-      .container-fluid.py-5
+    .p-5.mb-4.rounded-3.bg-gray-dark.text-white
+      .container-fluid
         h1.display-5.fw-bold Principles
         p.col-md-8.fs-4
           | Values are too abstract to directly guide behavior. That's why we need principles. You can use the principles to understand the practices better. The principles give you a better idea of what the practice is intended to accomplish. No work should be done for its own sake.
 
-        a.btn.btn-primary.btn-lg(
+        a.btn.btn-light.btn-lg(
           href="https://en.wikipedia.org/wiki/Principle"
           target='_blank'
           rel="noopener"
           ) Know more
     .row.align-items-md-stretch
-      +value-card-dark('Thin Clients','#')
-        p
-          | Simplicity is the ultimate form of sophistication. Always strive for this particular value in all you do. This will make your life better. But, remember achieving simplicity is hard.
-      +value-card('HATEOAS','#')
-        p
-          | Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
+      +value-card-dark('Focus on the User','https://meiert.com/en/blog/principles-of-web-development/')
+        p  No matter how deep we are in the trenches, we must first of all focus on the user. Our peers, other developers, likely our team mates, are indeed users of our code. But everyone using the systems of whatever our code is part of, are also our users.
+      +value-card('Focus on Quality','https://meiert.com/en/blog/principles-of-web-development/')
+        p  This principle is what distinguishes the expert from the amateur, the professional from the hobbyist. Everyone can hack together a website—and we all know what that has done to our field—, but few can create a high quality one.
       .mt-4
-      +value-card('Complexity Budget','#')
-        p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-      +value-card-dark('Locality of Behavior','#')
-        p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
+      +value-card('Think Long-Term', 'https://meiert.com/en/blog/principles-of-web-development/')
+        p Long-term focus demands from us to go about our projects in a planned, sustainable fashion.
+      +value-card-dark('Code Responsibly','https://meiert.com/en/blog/principles-of-web-development/')
+        p Web development means responsibility. That responsibility concerns both ourselves and others, where others are again colleagues, shareholders, as well as users.
       .mt-4
-      +value-card-dark('Locality of Behavior','#')
-        p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-      +value-card('Accessible Routing','#')
-        p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
+      +value-card-dark('Thin Clients','https://stackoverflow.com/questions/1518291/what-do-you-mean-by-thin-client-application')
+        p
+          | A thin client application is one where the requirements on the user-side application host, in terms of processing power, footprint and configuration are relatively minimal.
+      +value-card('Know Your Field','https://meiert.com/en/blog/principles-of-web-development/')
+        p Know our field, its neighbors, and its boundaries. At this point we all learned to do without specifics, that we need to do this work by ourselves. Our field should be pretty clearly marked by web standards and related best practices.
+      .mt-4
+      +value-card('Complexity Budget','https://htmx.org/essays/complexity-budget/')
+        p  Every application involves managing a complexity budget. A complexity budget can be defined as: An explicit or implicit allocation of complexity across the entire application.
+      +value-card-dark('Locality of Behavior','https://htmx.org/essays/locality-of-behaviour/')
+        p  LoB is a software design principle that can help make a code bases more humane and maintainable. It must be traded off against other design principles and be considered in terms of the limitations of the system a code unit is written in, but, as much as is it is practical, adherence to this principle will increase your developer productivity and well-being.
