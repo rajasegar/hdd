@@ -27,6 +27,12 @@ module.exports = {
       description: 'Laravel Livewire Introduction',
     },
     {
+      id: 'https://www.youtube.com/watch?v=MZvmYaFkNJI',
+      duration: 17,
+      year: 2020,
+      description: 'Build a real-time Twitter clone in 15 minutes with LiveView and Phoenix 1.5',
+    },
+    {
       id: 'rI8tNMsozo0',
       duration: 36,
       year: 2012,
@@ -46,6 +52,37 @@ module.exports = {
       url: 'https://dev.to/rajasegar/html-over-the-wire-is-the-future-of-web-development-542c',
       title: 'HTML over-the-wire is a promising future of Web Development',
     },
+    {
+      url: 'https://github.com/guettli/html-over-the-wire',
+      title: 'html-over-the-wire',
+    },
+    {
+      url:
+        'https://stackoverflow.com/questions/4709346/why-do-web-applications-send-html-over-the-wire',
+      title: 'Stack Overflow: Why do web applications send HTML over the wire?',
+    },
+    {
+      url:
+        'https://www.phoenixframework.org/blog/build-a-real-time-twitter-clone-in-15-minutes-with-live-view-and-phoenix-1-5',
+      title: 'Build a real-time Twitter clone in 15 minutes with LiveView and Phoenix 1.5',
+    },
   ],
-  demos: [],
+  demos: [
+    {
+      url: 'https://github.com/hopsoft/chatter',
+      title: 'Chatter: A Twitter clone with Rails, CableReady and StimulusReflex',
+    },
+    {
+      url: 'https://github.com/chrismccord/phoenix_live_view_example',
+      title: 'Phoenix Liveview example',
+    },
+    {
+      url: 'https://github.com/chrismccord/phoenix_chat_example',
+      title: 'Simple Chat Example in Phoenix',
+    },
+    {
+      url: 'https://github.com/rajasegar/htmx-twitter-clone',
+      title: 'A Twitter clone using Node and htmx',
+    },
+  ],
 };

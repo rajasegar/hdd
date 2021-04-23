@@ -21,6 +21,38 @@ module.exports = {
       description: 'The Drawback of Client Side Rendering',
     },
   ],
-  articles: [],
+  articles: [
+    {
+      url:
+        'https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/',
+      title: 'Client-side vs. server-side rendering: why it’s not all black and white',
+    },
+    {
+      url: 'https://developers.google.com/web/updates/2019/02/rendering-on-the-web',
+      title: 'Rendering on the Web',
+    },
+    {
+      url:
+        'https://www.smashingmagazine.com/2020/07/differences-static-generated-sites-server-side-rendered-apps/',
+      title: 'Differences Between Static Generated Sites And Server-Side Rendered Apps',
+    },
+    {
+      url:
+        'https://blog.appsignal.com/2020/11/25/server-side-rendering-in-javascript-a-modern-approach.html',
+      title: 'Server-side Rendering in JavaScript: A Modern Approach',
+    },
+    {
+      url: 'https://www.toptal.com/front-end/client-side-vs-server-side-pre-rendering',
+      title: 'Client-side vs. Server-side vs. Pre-rendering for Web Apps',
+    },
+    {
+      url: 'https://www.gatsbyjs.com/docs/glossary/server-side-rendering/',
+      title: 'Server Side Rendering',
+    },
+    {
+      url: 'https://www.telerik.com/blogs/understanding-server-side-rendering',
+      title: 'Understanding Server-Side Rendering',
+    },
+  ],
   demos: [],
 };

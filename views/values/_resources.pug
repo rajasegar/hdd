@@ -1,0 +1,21 @@
+include ../_mixins
+section.py-2.container
+  h2.text-center Talks & Videos
+.album.py-2.bg-dark
+  .container
+    .row.row-cols-1.row-cols-sm-2.row-cols-md-3.g-3
+      each video in videos
+        +youtube-card(video)
+          | #{video.description}
+
+section.py-2.container
+  h2.text-center Blogs & Articles
+  .list-group
+    each article in articles
+      +lg-link(article)
+
+section.py-2.container
+  h2.text-center Demos & Source Code
+  .list-group
+    each demo in demos
+      +lg-link(demo)

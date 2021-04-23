@@ -1,15 +1,15 @@
 include ../_youtube-card
 include ../_mixins
 main
-  section.py-2.text-center.container
+  section.py-2.container
     .row.py-lg-5
       .col-lg-6.col-md-8.mx-auto
-        h1.fw-light HTML over the wire
+        h1.fw-light.text-center HTML over the wire
         p.lead.text-muted
           | HTML Over The Wire is a celebration of the simplicity in HTML as the format for carrying data and presentation together, whether this is delivered on the first load or with subsequent dynamic updates.
         p
           each value in values
             +value-tag(value)
-        p
+        p.text-center
           a.btn.btn-primary.my-2(href='https://html-over-the-wire.herokuapp.com') Compare different solutions available
   include _resources
