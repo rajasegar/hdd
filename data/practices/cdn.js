@@ -2,6 +2,12 @@ module.exports = {
   values: ['Performance', 'Energy Efficiency'],
   videos: [
     {
+      id: '_QeNLrkPvdI',
+      duration: 16,
+      year: 2017,
+      description: 'Front End Center - Cahcing & CDNs',
+    },
+    {
       id: 'Bsq5cKkS33I',
       duration: 4,
       year: 2019,
@@ -18,6 +24,19 @@ module.exports = {
       duration: 15,
       year: 2021,
       description: 'Using Skypack - the NPM Killer!',
+    },
+    {
+      id: '841kyd_mfH0',
+      duration: 5,
+      year: 2020,
+      description: 'What is Cloud CDN?',
+    },
+    {
+      id: 'farO15_0NUQ',
+      duration: 32,
+      year: 2016,
+      description:
+        'GOTO 2016 • What is a CDN and why Developers should Care about using one • Artur Bergman',
     },
   ],
   articles: [
