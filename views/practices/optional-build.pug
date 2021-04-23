@@ -8,4 +8,7 @@ main
         p.lead.text-muted
           | Bundling need not to be a mandatory practice in Web development. You only need to bundle when you want such as in production enviroments. With the advent of EcmaScript Modules, the new module standard for Javascript there are a lot of tools to avoid bundling for the client.
 
+        p
+          each value in values
+            +value-tag(value)
   include _resources
