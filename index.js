@@ -69,5 +69,9 @@ app.get('/dark-mode', (req, res) => {
   res.redirect('/');
 });
 
+app.get('/about', stream.stream(), (req, res) => {
+  res.render('about');
+});
+
 app.listen(PORT);
 console.log('Listening on port: ', PORT);
