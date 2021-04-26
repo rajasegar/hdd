@@ -27,16 +27,10 @@ module.exports = {
       description: 'Laravel Livewire Introduction',
     },
     {
-      id: 'https://www.youtube.com/watch?v=MZvmYaFkNJI',
+      id: 'MZvmYaFkNJI',
       duration: 17,
       year: 2020,
       description: 'Build a real-time Twitter clone in 15 minutes with LiveView and Phoenix 1.5',
-    },
-    {
-      id: 'rI8tNMsozo0',
-      duration: 36,
-      year: 2012,
-      description: 'Rails Conf 2012 Keynote: Simplicity Matters by Rich Hickey',
     },
   ],
   articles: [
