@@ -33,12 +33,10 @@ module.exports = {
     {
       url:
         'https://tech.ebayinc.com/engineering/async-fragments-rediscovering-progressive-html-rendering-with-marko/',
-      title:
-        'Async Fragments: Rediscovering Progressive HTML Rendering with Marko',
+      title: 'Async Fragments: Rediscovering Progressive HTML Rendering with Marko',
     },
     {
-      url:
-        'http://blog.codinghorror.com/the-lost-art-of-progressive-html-rendering/',
+      url: 'http://blog.codinghorror.com/the-lost-art-of-progressive-html-rendering/',
       title: 'The Lost Art of Progressive HTML Rendering',
     },
     {
@@ -66,8 +64,7 @@ module.exports = {
     },
     {
       url: 'https://github.com/patrick-steele-idem/express-view-streaming',
-      title:
-        'Sample app that demonstrates streaming template rendering with Express',
+      title: 'Sample app that demonstrates streaming template rendering with Express',
     },
   ],
 };
