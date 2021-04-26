@@ -14,10 +14,13 @@ app.use(compression());
 app.use(express.static('public'));
 app.use(cookieParser('html-driven-dev'));
 
+// Disable cache control for now
+/*
 app.use(function cache(req, res, next) {
   res.setHeader('Cache-Control', 'public, max-age=5000');
   next();
 });
+*/
 
 app.use(function contentType(req, res, next) {
   res.setHeader('Content-Type', 'text/html');
