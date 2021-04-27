@@ -1,5 +1,11 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+:root {
+  --html-orange: #e34c26;
+  --html-light-orange: #f06529;
+  --html-gray: #ebebeb;
+}
+
 /* Padding below the footer and lighter body text */
 
 body {
@@ -7,7 +13,6 @@ body {
   padding-bottom: 3rem;
   color: #fff;
   background: var(--bs-dark);
-  font-family: 'Roboto', sans-serif;
 }
 
 body.light-mode {
@@ -98,12 +103,33 @@ body.light-mode {
     1px 30px 60px rgba(16,16,16,0.4);
 }
 
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+  .text-3d {
+    font-size: 4em;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+  .text-3d {
+    font-size: 6em;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  .text-3d {
+    font-size: 8em;
+  }
+}
+
 #logo {
   position: relative;
   width: 100%;
-  height: 400px;
-  background: #555;
-  margin-bottom: 2em;
+  height: 300px;
+  background: var(--html-orange);
   color: #fff;
 }
 
@@ -115,36 +141,3 @@ a:hover {
   color: #fff;
 }
 
-.light-mode a {
-  color: var(--bs-blue) !important;
-}
-
-.light-mode .bg-dark {
-  background-color: #f8f9fa!important;
-  border: 1px solid #dee2e6!important;
-}
-
-.light-mode .text-white {
-  color: #000 !important;
-}
-
-.light-mode .btn-outline-light {
-  color: #212529 !important;
-  border-color: #212529 !important;
-}
-
-.light-mode .btn-outline-dark {
-  color: #fff !important;
-  border-color: #fff !important;
-}
-
-.light-mode .bg-light {
-  background-color: #212529!important;
-  color: #fff!important;
-}
-
-.light-mode .text-dark, 
-.light-mode .navbar-brand, 
-.light-mode .nav-link {
-  color: #fff!important;
-}
