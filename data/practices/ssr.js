@@ -20,6 +20,42 @@ module.exports = {
       year: 2020,
       description: 'The Drawback of Client Side Rendering',
     },
+    {
+      id: 'Q52WXZFQT9w',
+      duration: 18,
+      year: 2018,
+      description: 'How To Render Server Side with Puppeteer',
+    },
+    {
+      id: 'RAhYnK0v3rk',
+      duration: 5,
+      year: 2017,
+      description: 'Server-side Rendering - Totally Tooling Tips',
+    },
+    {
+      id: 'Y2spCNZDt84',
+      duration: 9,
+      year: 2017,
+      description: 'Client Side vs. Server Side Rendering',
+    },
+    {
+      id: 'GQzn7XRdzxY',
+      duration: 6,
+      year: 2017,
+      description: 'What is Server-Side Rendering?',
+    },
+    {
+      id: 'f1rF9YKm1Ms',
+      duration: 13,
+      year: 2021,
+      description: 'Client-Side VS Server-Side Rendering - Data Fetching with Next.js',
+    },
+    {
+      id: '2tJedF8I-8Q',
+      duration: 25,
+      year: 2020,
+      description: 'CSR, SSR, and SSG on NextJS',
+    },
   ],
   articles: [
     {
@@ -52,6 +88,10 @@ module.exports = {
     {
       url: 'https://www.telerik.com/blogs/understanding-server-side-rendering',
       title: 'Understanding Server-Side Rendering',
+    },
+    {
+      url: 'https://developers.google.com/web/tools/puppeteer/articles/ssr',
+      title: 'Headless Chrome: an answer to server-side rendering JS sites',
     },
   ],
   demos: [],
