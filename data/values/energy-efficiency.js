@@ -34,6 +34,25 @@ module.exports = {
       url: 'https://www.wired.co.uk/article/internet-carbon-footprint',
       title: 'Your website is killing the planet',
     },
+    {
+      url:
+        'https://www.creativebloq.com/inspiration/save-planet-through-sustainable-web-design-8126147',
+      title: 'Save the planet through Sustainable Web design',
+    },
+    {
+      url: 'https://www.smashingmagazine.com/2019/01/save-planet-improving-website-performance/',
+      title: 'https://www.smashingmagazine.com/2019/01/save-planet-improving-website-performance/',
+    },
+    {
+      url: 'https://alistapart.com/article/sustainable-web-design/',
+      title: 'Sustainable Web Design',
+    },
   ],
   demos: [],
+  websites: [
+    {
+      url: 'https://sustainablewebdesign.org/',
+      title: 'Sustainable Web Design',
+    },
+  ],
 };

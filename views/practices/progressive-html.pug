@@ -1,7 +1,5 @@
 include ../_youtube-card
-mixin lg-link(item)
-  a.list-group-item.list-group-item-action(href=item.url, target="_blank")
-    | #{item.title}
+include ../_mixins
 main
   section.py-2.container
     .row.py-lg-5
