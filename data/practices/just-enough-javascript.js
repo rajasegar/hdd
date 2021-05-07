@@ -21,4 +21,5 @@ module.exports = {
   ],
   articles: [],
   demos: [],
+  websites: [],
 };

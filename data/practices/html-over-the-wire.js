@@ -79,4 +79,5 @@ module.exports = {
       title: 'A Twitter clone using Node and htmx',
     },
   ],
+  websites: [],
 };

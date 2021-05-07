@@ -46,4 +46,30 @@ module.exports = {
     },
   ],
   demos: [],
+  websites: [
+    {
+      url: 'https://skypack.dev/',
+      title: 'Skypack',
+    },
+    {
+      url: 'https://jspm.org/',
+      title: 'jspm',
+    },
+    {
+      url: 'https://unpkg.com/',
+      title: 'unpkg',
+    },
+    {
+      url: 'https://esm.sh/',
+      title: 'esm.sh',
+    },
+    {
+      url: 'https://cdn.jsdelivr.net/',
+      title: 'jsdelivr',
+    },
+    {
+      url: 'https://esm.run/',
+      title: 'esm.run',
+    },
+  ],
 };

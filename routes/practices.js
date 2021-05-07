@@ -11,8 +11,8 @@ router.get('/', stream.stream(), (req, res) => {
 router.get('/:id', stream.stream(), (req, res) => {
   const { id } = req.params;
   console.log(id);
-  const { values, videos, articles, demos } = data[id];
-  res.render(`practices/${id}`, { videos, articles, demos, values });
+  const { values, videos, articles, demos, websites } = data[id];
+  res.render(`practices/${id}`, { videos, articles, demos, values, websites });
 });
 
 module.exports = router;

@@ -9,9 +9,4 @@ main
           | The internet consumes a lot of electricity. 416.2TWh per year to be precise. To give you some perspective, that’s more than the entire United Kingdom. From data centres to transmission networks to the devices that we hold in our hands, it is all consuming electricity, and in turn producing carbon emissions.
         p.text-center
           a.btn.btn-primary(href="https://websitecarbon.com") Estimate your web page carbon footprint
-  include _resources
-  section.py-2.container
-    h2.text-center Websites
-    .list-group
-      each website in websites
-        +lg-link(website)
+  include ../_resources

@@ -95,4 +95,5 @@ module.exports = {
     },
   ],
   demos: [],
+  websites: [],
 };
