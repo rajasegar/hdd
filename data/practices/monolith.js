@@ -48,6 +48,29 @@ module.exports = {
       title:
         'Inertia.JS Lets Developers Write API-Free Monolithic React/Vue/Svelte Applications in PHP or Ruby',
     },
+    {
+      url: 'https://martinfowler.com/bliki/MonolithFirst.html',
+      title: 'MonolithFirst',
+    },
+    {
+      url: 'https://medium.com/@dan_manges/the-modular-monolith-rails-architecture-fb1023826fc4',
+      title: 'The Modular Monolith: Rails Architecture',
+    },
+    {
+      url: 'https://shopify.engineering/shopify-monolith',
+      title: 'Under Deconstruction: The State of Shopify’s Monolith',
+    },
+    {
+      url:
+        'https://shopify.engineering/deconstructing-monolith-designing-software-maximizes-developer-productivity',
+      title:
+        'Deconstructing the Monolith: Designing Software that Maximizes Developer Productivity',
+    },
+    {
+      url:
+        'https://medium.com/a-technologists-pov/i-just-heard-that-monoliths-are-the-future-of-software-development-2190bf7f3c40',
+      title: 'I Just Heard That Monoliths Are The Future Of Software Development',
+    },
   ],
   demos: [],
   websites: [],

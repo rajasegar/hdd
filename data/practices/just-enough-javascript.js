@@ -1,4 +1,5 @@
 module.exports = {
+  values: ['Simplicity', 'Performance', 'Energy Efficiency'],
   videos: [
     {
       id: '-wtHyKiMwJs',
@@ -19,7 +20,12 @@ module.exports = {
       description: 'Say No To Complexity With AlpineJS - Caleb Porzio',
     },
   ],
-  articles: [],
+  articles: [
+    {
+      url: 'https://dev.to/this-is-learning/is-0kb-of-javascript-in-your-future-48og',
+      title: 'Is 0kb of JavaScript in your Future?',
+    },
+  ],
   demos: [],
   websites: [],
 };

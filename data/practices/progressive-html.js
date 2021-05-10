@@ -1,4 +1,5 @@
 module.exports = {
+  values: ['Simplicity', 'Performance'],
   videos: [
     {
       id: 'CLA2gQDegj0',
@@ -52,6 +53,16 @@ module.exports = {
         'http://strongloop.com/strongblog/bypassing-express-view-rendering-for-speed-and-modularity/',
       title: 'Bypassing Express View Rendering for Speed and Modularity',
     },
+    {
+      url:
+        'https://medium.com/the-thinkmill/progressive-rendering-the-key-to-faster-web-ebfbbece41a4',
+      title: 'Progressive Rendering — The Key to Faster Web',
+    },
+    {
+      url:
+        'https://blog.bitsrc.io/progressive-rendering-for-better-web-app-performance-22db0d2cd80',
+      title: 'Progressive Rendering for Better Web App Performance',
+    },
   ],
   demos: [
     {
@@ -65,6 +76,10 @@ module.exports = {
     {
       url: 'https://github.com/patrick-steele-idem/express-view-streaming',
       title: 'Sample app that demonstrates streaming template rendering with Express',
+    },
+    {
+      url: 'https://github.com/marko-js-samples/marko-progressive-rendering',
+      title: 'Marko Progressive rendering',
     },
   ],
   websites: [],

@@ -1,4 +1,5 @@
 module.exports = {
+  values: ['Performance'],
   videos: [
     {
       id: 'Uyw1m2t2RJw',

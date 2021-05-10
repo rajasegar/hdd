@@ -41,7 +41,7 @@ module.exports = {
     },
     {
       url: 'https://www.smashingmagazine.com/2019/01/save-planet-improving-website-performance/',
-      title: 'https://www.smashingmagazine.com/2019/01/save-planet-improving-website-performance/',
+      title: 'How Improving Website Performance Can Help Save The Planet',
     },
     {
       url: 'https://alistapart.com/article/sustainable-web-design/',
@@ -53,6 +53,22 @@ module.exports = {
     {
       url: 'https://sustainablewebdesign.org/',
       title: 'Sustainable Web Design',
+    },
+    {
+      url: 'https://ecograder.com/',
+      title: 'Ecograder',
+    },
+    {
+      url: 'http://clickclean.org',
+      title: 'ClickClean',
+    },
+    {
+      url: 'https://www.thegreenwebfoundation.org/',
+      title: 'The Green Web Foundation',
+    },
+    {
+      url: 'https://websitecarbon.com',
+      title: 'Website Carbon',
     },
   ],
 };
