@@ -103,19 +103,12 @@ body.light-mode {
     1px 30px 60px rgba(16,16,16,0.4);
 }
 
-
-/* X-Small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
-  .text-3d {
-    font-size: 4em;
-  }
-}
-
-/* Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) { 
-  .text-3d {
-    font-size: 6em;
-  }
+#logo {
+  position: relative;
+  width: 100%;
+  height: 20em;
+  background: var(--html-orange);
+  color: #fff;
 }
 
 /* Medium devices (tablets, less than 992px)*/
@@ -125,12 +118,26 @@ body.light-mode {
   }
 }
 
-#logo {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  background: var(--html-orange);
-  color: #fff;
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+  .text-3d {
+    font-size: 6em;
+  }
+
+  #logo {
+    height: 15em;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+  .text-3d {
+    font-size: 4em;
+  }
+
+  #logo {
+    height: 8em;
+  }
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -139,7 +146,6 @@ body.light-mode {
 
 .first-letter::first-letter {
   font-size: 200%;
-  color: var(--html-orange);
   font-weight: 600;
 }
 a {
@@ -159,6 +165,10 @@ a.nav-link:hover::after {
   content: "/>";
 }
 
+.list-group-item-action:focus {
+  background: var(--bs-dark);
+}
+
 .text-html-orange {
   color: var(--html-orange);
 }
@@ -176,7 +186,7 @@ a.nav-link:hover::after {
 }
 
 hr {
-  border-top: 2px dashed var(--html-light-orange);
+  border-top: 2px dotted var(--bs-white);
   color: transparent;
 }
 

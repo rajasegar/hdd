@@ -1,9 +1,9 @@
 include _value-card
-main
+main.mt-4
   .container
+    h1.display-5.text-center &lt;Practices/&gt;
     .p-3.mb-4.rounded-3.bg-gray-dark.text-white
       .container-fluid
-        h1.display-5.text-center &lt;Practices/&gt;
         p.col-md-12.fs-4.first-letter
           | Practices are evidences of values. They are unproductive unless given purpose by values. They are situation dependent. If the situation changes, you choose different practices to meet those conditions. Applying a practice is a choice.
 
@@ -36,7 +36,7 @@ main
       //-+value-card-dark('Avoid State on Client','/practices/avoid-state-on-client')
         p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
       +value-card-dark('Make use of CDN','/practices/cdn')
-        p  Content delivery networks (CDN’s) provide a great solution to this, serving assets such as image files from a network of data centres around the world. This means that in most cases, the largest files will be loaded from the CDN location in the users own region, reducing the distance that data is moving each time a page is loaded. Once again, this improves energy efficiency and improves page load times.
+        p  Content delivery networks (CDN’s) provide a great solution to this, serving assets such as image files from a network of data centres around the world. This means that in most cases, the largest files will be loaded from the CDN location in the users own region, reducing the distance that data is moving each time a page is loaded.
       +value-card('Reduce Images','#')
         p On most websites, images are the single largest contributors to page weight. The more images you use and the larger those image files, the more data needs to be transferred and the more energy is used. 
       .mt-4
