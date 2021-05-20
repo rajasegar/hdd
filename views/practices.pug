@@ -1,57 +1,43 @@
 include _value-card
-main.mt-4
-  .container
-    h1.display-5.text-center &lt;Practices/&gt;
-    .p-3.mb-4.rounded-3.bg-gray-dark.text-white
-      .container-fluid
-        p.col-md-12.fs-4.first-letter
-          | Practices are evidences of values. They are unproductive unless given purpose by values. They are situation dependent. If the situation changes, you choose different practices to meet those conditions. Applying a practice is a choice.
+main.container.max-w-7xl.mx-auto.px-2.mt-4(class='sm_px-6 lg_px-8')
+  h1.text-5xl.text-center.font-bold.py-4.text-gray-900 &lt;Practices/&gt;
+  .grid.grid-cols-2.gap-4
+    +value-card('Server-side Rendering','/practices/ssr')
+      p
+        | Server-side rendering is the most common method for displaying information onto the screen. It works by converting HTML files in the server into usable information for the browser. Whenever you visit a website, your browser makes a request to the server that contains the contents of the website.
+    +value-card('HTML over the wire','/practices/html-over-the-wire')
+      p
+        | HTML over the wire is an alternative approach to building modern web applications without using much JavaScript by sending HTML instead of JSON over the wire. 
+    +value-card('Progressive HTML Rendering', '/practices/progressive-html')
+      p  Progressive HTML rendering is a technique to improve the performance of websites that involves sending an HTTP response for an HTML page in multiple flushes. This improves both the actual load time, as well as the perceived load time.
 
-        //-button.btn.btn-light.btn-lg(type='button') Know more
-    .row.align-items-md-stretch
-      +value-card-dark('Server-side Rendering','/practices/ssr')
-        p
-          | Server-side rendering is the most common method for displaying information onto the screen. It works by converting HTML files in the server into usable information for the browser. Whenever you visit a website, your browser makes a request to the server that contains the contents of the website.
-      +value-card('HTML over the wire','/practices/html-over-the-wire')
-        p
-          | HTML over the wire is an alternative approach to building modern web applications without using much JavaScript by sending HTML instead of JSON over the wire. 
-      .mt-4
-      +value-card('Progressive HTML Rendering', '/practices/progressive-html')
-        p  Progressive HTML rendering is a technique to improve the performance of websites that involves sending an HTTP response for an HTML page in multiple flushes. This improves both the actual load time, as well as the perceived load time.
+    +value-card('Server side Routing','/practices/server-side-routing')
+      p Client-side routing sound more complicated, because it is. Server-side routing has been the standard for a long time, search engines are optimised for webpages that come from the server. 
 
-      +value-card-dark('Server side Routing','/practices/server-side-routing')
-        p Client-side routing sound more complicated, because it is. Server-side routing has been the standard for a long time, search engines are optimised for webpages that come from the server. 
-      .mt-4
-
-      +value-card-dark('Just Enough JavaScript','/practices/just-enough-javascript')
-        p JavaScript was supposed to be sprinkled upon HTML and primarily used for interactivity and dynamism, nothing more, nothing less. 
-      +value-card('Optional Build / Compilation','/practices/optional-build')
-        p Bundling need not to be a mandatory practice in Web development. You only need to bundle when you want such as in production enviroments. With the advent of EcmaScript Modules, the new module standard for Javascript there are a lot of tools to avoid bundling for the client.
-      .mt-4
-      +value-card('Progressive Enhancement','/practices/progressive-enhancement')
-        p  Progressive enhancement is a design and development strategy for websites that starts with a simple base and adds step-by-step improvements for more powerful systems. It allows developers to design websites that take full advantage of the capabilities of modern browsers and devices. 
-      +value-card-dark('The Monolith','/practices/monolith')
-        p  Collapse as many unnecessary conceptual models as possible. Eliminates as much needless abstraction as you can swing a hammer at. It’s a big fat no to distributing your system lest it truly prevents you from doing what really needs to be done.
-      .mt-4
-      //-+value-card-dark('Avoid State on Client','/practices/avoid-state-on-client')
-        p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
-      +value-card-dark('Make use of CDN','/practices/cdn')
-        p  Content delivery networks (CDN’s) provide a great solution to this, serving assets such as image files from a network of data centres around the world. This means that in most cases, the largest files will be loaded from the CDN location in the users own region, reducing the distance that data is moving each time a page is loaded.
-      +value-card('Reduce Images','#')
-        p On most websites, images are the single largest contributors to page weight. The more images you use and the larger those image files, the more data needs to be transferred and the more energy is used. 
-      .mt-4
-      +value-card('Reduce Videos','#')
-        p  As with images, ask yourself if videos are really necessary. If they are, see if you can reduce the amount of video streamed by removing auto-play from videos and by keeping video content short. 
-      +value-card-dark('Choose fonts carefully','#')
-        p Web fonts can enhance the visual appeal of websites but can add significant file weight to the websites on which they are used.
-      .mt-4
-      +value-card-dark('Write Clean code', '#')
-        p Write clean code
-      +value-card('Optimize Images', '#')
-        p Images are one of the largest contributors to the amount of data transferred on most web pages. In addition to the decisions made by designers and content creators on the use of images, there are technical decisions that significantly affect the file size of images displayed on a page. 
-      .mt-4
-      +value-card('Optimize Fonts','#')
-        p There are technical strategies that can be used to minimise the size of fonts on websites and we have seen that even with custom fonts, it can result in file size reductions of up to 97%.
-      +value-card-dark('Use Server Caching','#')
-        p Caching technologies pre-generate static versions of each page so that the server overhead can be significantly reduced for most visitors. This significantly reduces server energy consumption and makes a big difference to page load times.
+    +value-card('Just Enough JavaScript','/practices/just-enough-javascript')
+      p JavaScript was supposed to be sprinkled upon HTML and primarily used for interactivity and dynamism, nothing more, nothing less. 
+    +value-card('Optional Build / Compilation','/practices/optional-build')
+      p Bundling need not to be a mandatory practice in Web development. You only need to bundle when you want such as in production enviroments. With the advent of EcmaScript Modules, the new module standard for Javascript there are a lot of tools to avoid bundling for the client.
+    +value-card('Progressive Enhancement','/practices/progressive-enhancement')
+      p  Progressive enhancement is a design and development strategy for websites that starts with a simple base and adds step-by-step improvements for more powerful systems. It allows developers to design websites that take full advantage of the capabilities of modern browsers and devices. 
+    +value-card('The Monolith','/practices/monolith')
+      p  Collapse as many unnecessary conceptual models as possible. Eliminates as much needless abstraction as you can swing a hammer at. It’s a big fat no to distributing your system lest it truly prevents you from doing what really needs to be done.
+    //-+value-card-dark('Avoid State on Client','/practices/avoid-state-on-client')
+      p  Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.
+    +value-card('Make use of CDN','/practices/cdn')
+      p  Content delivery networks (CDN’s) provide a great solution to this, serving assets such as image files from a network of data centres around the world. This means that in most cases, the largest files will be loaded from the CDN location in the users own region, reducing the distance that data is moving each time a page is loaded.
+    +value-card('Reduce Images','#')
+      p On most websites, images are the single largest contributors to page weight. The more images you use and the larger those image files, the more data needs to be transferred and the more energy is used. 
+    +value-card('Reduce Videos','#')
+      p  As with images, ask yourself if videos are really necessary. If they are, see if you can reduce the amount of video streamed by removing auto-play from videos and by keeping video content short. 
+    +value-card('Choose fonts carefully','#')
+      p Web fonts can enhance the visual appeal of websites but can add significant file weight to the websites on which they are used.
+    +value-card('Write Clean code', '#')
+      p Write clean code
+    +value-card('Optimize Images', '#')
+      p Images are one of the largest contributors to the amount of data transferred on most web pages. In addition to the decisions made by designers and content creators on the use of images, there are technical decisions that significantly affect the file size of images displayed on a page. 
+    +value-card('Optimize Fonts','#')
+      p There are technical strategies that can be used to minimise the size of fonts on websites and we have seen that even with custom fonts, it can result in file size reductions of up to 97%.
+    +value-card('Use Server Caching','#')
+      p Caching technologies pre-generate static versions of each page so that the server overhead can be significantly reduced for most visitors. This significantly reduces server energy consumption and makes a big difference to page load times.
 

@@ -17,6 +17,12 @@ app.use(function contentType(req, res, next) {
   next();
 });
 
+// Set active url
+app.use(function (req, res, next) {
+  res.locals.active = req.url;
+  next();
+});
+
 stream.closeBodyCloseHtml(true);
 stream.streamBefore('_header');
 stream.streamAfter('_footer');

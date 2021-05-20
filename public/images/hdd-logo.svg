@@ -1,0 +1,9 @@
+<svg width="297mm" height="93mm" version="1.1" viewBox="0 0 297 93" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient994" x1="20.915" x2="276.96" y1="44.39" y2="44.39" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#000080" offset="0"/>
+   <stop stop-color="#f0f" offset="1"/>
+  </linearGradient>
+ </defs>
+ <text x="17.386932" y="65.485825" fill="url(#linearGradient994)" font-family="Ubuntu" font-size="70.556px" font-weight="bold" stroke-width=".26458" style="line-height:1.25" xml:space="preserve"><tspan x="17.386932" y="65.485825" fill="url(#linearGradient994)" font-family="Ubuntu" font-size="70.556px" font-weight="bold" stroke-width=".26458">&lt;HDD/&gt;</tspan></text>
+</svg>

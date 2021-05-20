@@ -1,66 +1,41 @@
-main
-  #logo
-    .text-center
-      span.text-3d &lt;HDD/&gt;
-  .bg-gray-dark.mb-4.py-2
-    h2.text-center HTML Driven Development
-    p.text-center A set of core values, principles and practices for tackling complexity in the heart of Web development.
-  .container.marketing
-    .row.py-4
-      .col-lg-4
-        img.bd-placeholder-img.rounded-circle(width='140' height='140' src="/images/values-140.jpg" aria-label='Values')
-        h2 Values
-        p
-          | Values are the roots of the things we like and don't like in a situation.
-        p
-          a.btn.btn-light(href='/values') Explore Values »
-      .col-lg-4
-        img.bd-placeholder-img.rounded-circle(width='140' height='140' src="/images/principles-140.jpg" aria-label='Principles')
-        h2 Principles
-        p
-          | Bridging the gap between values and practices are principles. Principles are domain-specific guidelines for life.
-        p
-          a.btn.btn-light(href='/principles') Explore Principles »
-      .col-lg-4
-        img.bd-placeholder-img.rounded-circle(width='140' height='140' src="/images/practices-140.jpg" aria-label='Principles')
-        h2 Practices
-        p Practices are the things you do day-to-day. Specifying practices is useful because they are clear and objective.
-        p
-          a.btn.btn-light(href='/practices') Explore Practices »
-      hr.featurette-divider
-      .row.featurette
-        .col-md-7
-          h2.featurette-heading
-            | Server-Side Rendering
-          p.lead
-            | <a href="https://developers.google.com/web/updates/2019/02/rendering-on-the-web#server-rendering" target="_blank" rel="noopener">Server-side rendering</a> is the most common method for displaying information onto the screen. It works by converting HTML files in the server into usable information for the browser. Whenever you visit a website, your browser makes a request to the server that contains the contents of the website.
-          p.lead The server returns a static web page fully complied with dynamic data ready to display on the browser. The fetching of the dynamic data is done by server-side scripts written by server-side languages. This is how we used to render web pages in the old days (PHP/ Perl/CGI), and it has recently gained traction with technologies, such as React and Express. It is SEO friendly and great for devices with low power. 
-
-
-        .col-md-5
-          a(href="/images/ssr.png")
-            img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src="/images/ssr-500.jpg" aria-label='Placeholder: 500x500')
-      hr.featurette-divider
-      .row.featurette
-        .col-md-7.order-md-2
-          h2.featurette-heading
-            | Progressive HTML Rendering
-          p.lead
-            | <a href="https://dev.to/ryansolid/server-rendering-in-javascript-optimizing-performance-1jnk" target="_blank" rel="noopener">Progressive HTML rendering</a> is a technique to improve the performance of websites that involves sending an HTTP response for an HTML page in multiple flushes. This improves both the actual load time, as well as the perceived load time.  
-          p.lead Netscape 1.0's early beta versions introduced the "progressive rendering" of pages and images, meaning that the page begins to appear and the text can be read even before all of the text and/or images have been completely downloaded.
-
-        .col-md-5.order-md-1
-          a(href="/images/progressive-html.jpg")
-            img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src="/images/phtml-500.jpg" aria-label='Placeholder: 500x500')
-      hr.featurette-divider
-      .row.featurette
-        .col-md-7
-          h2.featurette-heading
-            | Progressive enhancement
-          p.lead
-            | <a href="https://en.wikipedia.org/wiki/Progressive_enhancement" target="_blank" rel="noopener">Progressive enhancement</a> is a design and development strategy for websites that starts with a simple base and adds step-by-step improvements for more powerful systems. It allows developers to design websites that take full advantage of the capabilities of modern browsers and devices. At the same time, it avoids performance and display problems with less powerful devices and older browsers with limited functionality.
-        .col-md-5
-          a(href="/images/progressive-enhancement.png")
-            img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src="/images/pe-500.jpg" aria-label='Placeholder: 500x500')
-      hr.featurette-divider
-
+include _mixins
+main.container.max-w-7xl.mx-auto.px-2.pb-4(class='sm_px-6 lg_px-8')
+  .flex
+    .flex-1.mx-2
+      .mb-4.py-2
+        h2.text-7xl.text-indigo-600.font-bold.mt-16 HTML Driven Development
+        p.text-gray-900.text-2xl.my-2 A set of core values, principles and practices for tackling complexity in the heart of Web development.
+    .flex-1.py-2.ml-16
+      img(src="/images/html.svg", width="70%")
+.bg-white
+  .container.max-w-7xl.mx-auto.px-2(class='sm_px-6 lg_px-8')
+    .flex.py-4
+      .flex-1
+        img(src="/images/values.svg" aria-label='Values' )
+      .flex-1
+        h2.text-5xl.text-gray-900.font-bold.py-4 Values
+        p.text-xl.py-2.text-gray-500
+          | Values are the roots of the things we like and don't like in a situation. They are the large scale criteria we use to judge what we see, think, and do. Making values explicit is important because without values, practices quickly become repetitive, activities performed for their own sake but lacking any purpose or direction.
+        p.py-8
+          +link-indigo('/value', 'Values')
+            | Explore Values »
+    .flex
+      .flex-1
+        h2.text-5xl.text-gray-900.font-bold.py-4 Principles
+        p.text-xl.py-2.text-gray-500
+          | Bridging the gap between values and practices are principles. Principles are domain-specific guidelines for life. Principles are required because values are too abstract to directly guide behavior. You can use the principles to understand the practices better. The principles give you a better idea of what the practice is intended to accomplish. No work should be done for its own sake.
+        p.py-8
+          +link-indigo('/principles', 'Principles')
+            | Explore Principles »
+      .flex-1
+        img(src="/images/principles.svg" aria-label='Principles' )
+    .flex
+      .flex-1
+        img(src="/images/practices.svg" aria-label='Practices' )
+      .flex-1
+        h2.text-5xl.text-gray-900.font-bold.py-4 Practices
+        p.text-xl.py-2.text-gray-500 
+          | Practices are the things you do day-to-day. Specifying practices is useful because they are clear and objective. Practices are evidences of values. They are unproductive unless given purpose by values. They are situation dependent. If the situation changes, you choose different practices to meet those conditions. Applying a practice is a choice.
+        p.py-8
+          +link-indigo('/practices', 'Practices')
+            | Explore Practices »
