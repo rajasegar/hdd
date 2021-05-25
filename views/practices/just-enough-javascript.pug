@@ -1,16 +1,9 @@
-include ../_youtube-card
-mixin lg-link(item)
-  a.list-group-item.list-group-item-action(href=item.url, target="_blank")
-    | #{item.title}
-main
-  section.py-2.container
-    .row.py-lg-5
-      .col-lg-6.col-md-8.mx-auto
-        h1.fw-light.text-center Just Enough Javascript
-        p.lead
-          | JavaScript was supposed to be sprinkled upon HTML and primarily used for interactivity and dynamism, nothing more, nothing less.
-        //-p
-          a.btn.btn-primary.my-2(href='#') Main call to action
-          a.btn.btn-secondary.my-2(href='#') Secondary action
-        include _values
-  include ../_resources
+extends _layout
+block body
+  h1.fw-light.text-center Just Enough Javascript
+  p.lead
+    | JavaScript was supposed to be sprinkled upon HTML and primarily used for interactivity and dynamism, nothing more, nothing less.
+  //-p
+    a.btn.btn-primary.my-2(href='#') Main call to action
+    a.btn.btn-secondary.my-2(href='#') Secondary action
+  include _values

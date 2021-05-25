@@ -1,9 +1,9 @@
 mixin lg-link(article)
-  a.list-group-item.list-group-item-action.bg-gray-dark.text-white(href=article.url, target="_blank")
+  a.bg-white.shadow.px-2.py-2.text-gray-600.block.w-full.hover_text-indigo-600.border-gray-200.hover_bg-indigo-100.hover_font-bold(href=article.url, target="_blank")
     | #{article.title}
 
 mixin value-tag(value)
-  span.mx-2.badge.bg-light.text-dark #{value}
+  span.mx-2.bg-white.shadow.text-sm.p-2.rounded #{value}
 
 mixin tw-navbar-gray()
     nav(class='bg-white border-b-2 border-gray-200')&attributes(attributes)

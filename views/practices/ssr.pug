@@ -1,13 +1,8 @@
-include ../_youtube-card
-include ../_mixins
-main
-  section.py-2.container
-    .row.py-lg-5
-      .col-lg-6.col-md-8.mx-auto
-        h1.fw-light.text-center Server-side Rendering
-        p.lead.text-muted
-          | Server-side rendering is the most common method for displaying information onto the screen. It works by converting HTML files in the server into usable information for the browser. 
-        p
-          each value in values
-            +value-tag(value)
-  include ../_resources
+extends _layout
+block body
+  h1.text-5xl.text-center.font-bold Server-side Rendering
+  p.text-gray-600.px-8.py-4
+    | Server-side rendering is the most common method for displaying information onto the screen. It works by converting HTML files in the server into usable information for the browser. 
+  p.px-16.text-center
+    each value in values
+      +value-tag(value)
