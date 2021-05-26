@@ -1,22 +1,22 @@
 mixin featurette(title,src,url)
-  .row.featurette
-    .col-md-7
-      h2.featurette-heading
+  .md_grid.grid-cols-2.gap-4.my-2
+    .order-1
+      h2.text-2xl.font-bold.text-indigo-600.mb-2
         | #{title}
       block
 
-    .col-md-5
+    .order-2
       a(href=url)
-        img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src=src aria-label='Framework logo')
+        img.mx-auto(width='500' height='500' src=src aria-label='Framework logo')
 
 mixin featurette-alt(title,src,url)
-  .row.featurette
-    .col-md-7.order-md-2
-      h2.featurette-heading
+  .md_grid.grid-cols-2.gap-4.my-2
+    .order-2
+      h2.text-2xl.font-bold.text-indigo-600.mb-2
         | #{title}
       block
 
-    .col-md-5.order-md-1
+    .order-1
       a(href=url)
         img.bd-placeholder-img.bd-placeholder-img-lg.featurette-image.img-fluid.mx-auto(width='500' height='500' src=src aria-label='Framework logo')
 

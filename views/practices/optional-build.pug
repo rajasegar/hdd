@@ -1,14 +1,9 @@
-include ../_youtube-card
-include ../_mixins
-main
-  section.py-2.container
-    .row.py-lg-5
-      .col-lg-6.col-md-8.mx-auto
-        h1.fw-light.text-center Optional Build
-        p.lead.text-muted
-          | Bundling need not to be a mandatory practice in Web development. You only need to bundle when you want such as in production enviroments. With the advent of EcmaScript Modules, the new module standard for Javascript there are a lot of tools to avoid bundling for the client.
+extends _layout
+block body
+  h1.text-center.font-bold.text-5xl Optional Build
+  p.px-8.py-2
+    | Bundling need not to be a mandatory practice in Web development. You only need to bundle when you want such as in production enviroments. With the advent of EcmaScript Modules, the new module standard for Javascript there are a lot of tools to avoid bundling for the client.
 
-        p
-          each value in values
-            +value-tag(value)
-  include ../_resources
+  p.text-center
+    each value in values
+      +value-tag(value)

@@ -1,13 +1,8 @@
-include ../_youtube-card
-include ../_mixins
-main
-  section.py-2.container
-    .row.py-lg-5
-      .col-lg-6.col-md-8.mx-auto
-        h1.fw-light.text-center The Monolith
-        p.lead.text-muted
-          | Collapse as many unnecessary conceptual models as possible. Eliminates as much needless abstraction as you can swing a hammer at. It’s a big fat no to distributing your system lest it truly prevents you from doing what really needs to be done.
-        p
-          each value in values
-            +value-tag(value)
-  include ../_resources
+extends _layout
+block body
+  h1.text-center.font-bold.text-5xl The Monolith
+  p.px-8.my-2
+    | Collapse as many unnecessary conceptual models as possible. Eliminates as much needless abstraction as you can swing a hammer at. It’s a big fat no to distributing your system lest it truly prevents you from doing what really needs to be done.
+  p.text-center.my-2
+    each value in values
+      +value-tag(value)

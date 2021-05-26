@@ -3,26 +3,32 @@ mixin lg-link(article)
     | #{article.title}
 
 mixin value-tag(value)
-  span.mx-2.bg-white.shadow.text-sm.p-2.rounded #{value}
+  span.mx-2.bg-indigo-100.shadow.text-sm.p-2.rounded.text-indigo-600 #{value}
 
 mixin tw-navbar-gray()
     nav(class='bg-white border-b-2 border-gray-200')&attributes(attributes)
       .max-w-7xl.mx-auto.px-2(class='sm_px-6 lg_px-8')
         .relative.flex.items-center.justify-between.h-16
           .absolute.inset-y-0.left-0.flex.items-center(class='sm_hidden')
-            button.inline-flex.items-center.justify-center.p-2.rounded-md.text-gray-400(type='button' class='hover_text-white hover_bg-gray-700 focus_outline-none focus_ring-2 focus_ring-inset focus_ring-white' aria-controls='mobile-menu' aria-expanded='false')
+            button.inline-flex.items-center.justify-center.p-2.rounded-md.text-gray-400(type='button' class='hover_text-white hover_bg-gray-700 focus_outline-none focus_ring-2 focus_ring-inset focus_ring-white' aria-controls='mobile-menu' aria-expanded='false' _="on click toggle .hidden on #mobile-menu")
               span.sr-only Open main menu
               svg.block.h-6.w-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
                 path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16')
               svg.hidden.h-6.w-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
                 path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 18L18 6M6 6l12 12')
           block
-      #mobile-menu(class='sm_hidden')
+      #mobile-menu(class='sm_hidden hidden')
         .px-2.pt-2.pb-3.space-y-1
-          a.bg-gray-900.text-white.block.px-3.py-2.rounded-md.text-base.font-medium(href='#' aria-current='page') Dashboard
-          a.text-gray-300.block.px-3.py-2.rounded-md.text-base.font-medium(href='#' class='hover_bg-gray-700 hover_text-white') Team
-          a.text-gray-300.block.px-3.py-2.rounded-md.text-base.font-medium(href='#' class='hover_bg-gray-700 hover_text-white') Projects
-          a.text-gray-300.block.px-3.py-2.rounded-md.text-base.font-medium(href='#' class='hover_bg-gray-700 hover_text-white') Calendar
+          +mobile-nav-link("/", active) Home
+          +mobile-nav-link("/values", active) Values
+          +mobile-nav-link("/principles", active) Principles
+          +mobile-nav-link("/practices", active) Practices
+          +mobile-nav-link("/tools", active) Tools
+          +mobile-nav-link("/about", active) About
+          +mobile-nav-link("https://twitter.com/htmldrivendev")(aria-label="Twitter")
+            +icon-twitter()
+          +mobile-nav-link("https://discord.gg/AcTWdPR8")(aria-label="Discord")
+            +icon-discord()
 
 mixin tw-nav-link-gray(href, active)
   a.px-3.py-2.rounded-md.text-sm.font-medium(
@@ -30,6 +36,13 @@ mixin tw-nav-link-gray(href, active)
     aria-current='page' 
     class=active === href ? 'bg-gray-900 text-white' :  'text-gray-900 hover_bg-gray-700 hover_text-white'
     )
+    block
+
+mixin mobile-nav-link(href, active)
+  a.block.px-3.py-2.rounded-md.text-base.font-medium(
+    href=href 
+    aria-current=active === href ? 'page' : ''
+    class=active === href ? 'bg-gray-900 text-white' : 'text-gray-500')
     block
 
 

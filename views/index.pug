@@ -1,41 +1,40 @@
 include _mixins
 main.container.max-w-7xl.mx-auto.px-2.pb-4(class='sm_px-6 lg_px-8')
-  .flex
-    .flex-1.mx-2
-      .mb-4.py-2
-        h2.text-7xl.text-indigo-600.font-bold.mt-16 HTML Driven Development
-        p.text-gray-900.text-2xl.my-2 A set of core values, principles and practices for tackling complexity in the heart of Web development.
-    .flex-1.py-2.ml-16
-      img(src="/images/html.svg", width="70%")
+  .md_grid.grid-cols-2.gap-2
+    .mb-4.p-4
+      h2.md_text-7xl.text-4xl.text-indigo-600.font-bold.md_mt-16 HTML Driven Development
+      p.text-gray-900.text-2xl.my-2 A set of core values, principles and practices for tackling complexity in the heart of Web development.
+    .py-2.ml-16
+      img(src="/images/html.svg", width="70%", alt="HTML Driven Development")
 .bg-white
   .container.max-w-7xl.mx-auto.px-2(class='sm_px-6 lg_px-8')
-    .flex.py-4
+    .md_grid.grid-cols-2.gap-2
       .flex-1
-        img(src="/images/values.svg" aria-label='Values' )
+        img(src="/images/values.svg" alt='Values' )
       .flex-1
-        h2.text-5xl.text-gray-900.font-bold.py-4 Values
-        p.text-xl.py-2.text-gray-500
+        h2.text-5xl.text-gray-900.font-bold.p-4 Values
+        p.text-xl.py-2.text-gray-500.p-4
           | Values are the roots of the things we like and don't like in a situation. They are the large scale criteria we use to judge what we see, think, and do. Making values explicit is important because without values, practices quickly become repetitive, activities performed for their own sake but lacking any purpose or direction.
-        p.py-8
-          +link-indigo('/value', 'Values')
+        p.py-8.text-center
+          +link-indigo('/values', 'Values')
             | Explore Values »
-    .flex
-      .flex-1
-        h2.text-5xl.text-gray-900.font-bold.py-4 Principles
+    .md_grid.grid-cols-2.gap-2
+      .flex-1.p-4
+        h2.text-5xl.text-gray-900.font-bold Principles
         p.text-xl.py-2.text-gray-500
           | Bridging the gap between values and practices are principles. Principles are domain-specific guidelines for life. Principles are required because values are too abstract to directly guide behavior. You can use the principles to understand the practices better. The principles give you a better idea of what the practice is intended to accomplish. No work should be done for its own sake.
-        p.py-8
+        p.py-8.text-center
           +link-indigo('/principles', 'Principles')
             | Explore Principles »
       .flex-1
-        img(src="/images/principles.svg" aria-label='Principles' )
-    .flex
+        img(src="/images/principles.svg" alt='Principles' )
+    .md_grid.grid-cols-2.gap-2
       .flex-1
-        img(src="/images/practices.svg" aria-label='Practices' )
-      .flex-1
-        h2.text-5xl.text-gray-900.font-bold.py-4 Practices
+        img(src="/images/practices.svg" alt='Practices' )
+      .flex-1.p-4
+        h2.text-5xl.text-gray-900.font-bold Practices
         p.text-xl.py-2.text-gray-500 
           | Practices are the things you do day-to-day. Specifying practices is useful because they are clear and objective. Practices are evidences of values. They are unproductive unless given purpose by values. They are situation dependent. If the situation changes, you choose different practices to meet those conditions. Applying a practice is a choice.
-        p.py-8
+        p.py-8.text-center
           +link-indigo('/practices', 'Practices')
             | Explore Practices »
