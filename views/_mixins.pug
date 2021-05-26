@@ -35,7 +35,7 @@ mixin tw-nav-link-gray(href, active)
     href=href
     aria-current='page' 
     class=active === href ? 'bg-gray-900 text-white' :  'text-gray-900 hover_bg-gray-700 hover_text-white'
-    )
+    )&attributes(attributes)
     block
 
 mixin mobile-nav-link(href, active)
