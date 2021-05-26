@@ -1,13 +1,10 @@
 mixin youtube-card(video)
   .col
-    .card.shadow-sm.bg-gray-dark
+    .h-100.p-4.bg-white.rounded.text-gray-600.shadow      
       iframe(width="100%" height="225" src="https://www.youtube.com/embed/" + video.id title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
       .card-body
         p.card-text
           block
-        .d-flex.justify-content-between.align-items-center
-          //.btn-group
-            button.btn.btn-sm.btn-outline-secondary(type='button') View
-            button.btn.btn-sm.btn-outline-secondary(type='button') Edit
+        .flex.flex-row.justify-between.items-center
           small #{video.year}
           small.text-muted #{video.duration} mins

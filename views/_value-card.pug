@@ -1,17 +1,15 @@
+include _mixins
 mixin value-card(title, url)
-  .col-md-6.text-dark
-    .h-100.p-5.bg-light.rounded-3.bg-light-box-pattern
-      h2 #{title}
-      block
-      a.btn.btn-outline-dark(
-        href=url
-        ) Know more
+  .h-100.p-8.bg-white.rounded.text-gray-600.shadow.flex.flex-col.justify-between
+    h2.text-2xl.font-bold.py-2.text-indigo-600 #{title}
+    block
+    .mt-8.text-right
+      +link-indigo(url, 'Know more') Know more
 
 mixin value-card-dark(title, url)
-  .col-md-6
-    .h-100.p-5.text-white.bg-gray-dark.rounded-3.bg-dark-box-pattern
-      h2 #{title}
-      block
-      a.btn.btn-outline-light(
-        href=url
-        ) Know more
+  .h-100.p-8.text-white.bg-indigo-600.rounded.shadow-2xl
+    h2.text-2xl.font-bold.py-2.text-white #{title}
+    block
+    a.btn.btn-outline-light(
+      href=url
+      ) Know more
