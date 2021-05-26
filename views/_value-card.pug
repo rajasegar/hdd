@@ -1,7 +1,7 @@
 include _mixins
 mixin value-card(title, url)
-  .h-100.p-8.bg-white.rounded.text-gray-600.shadow.flex.flex-col.justify-between
-    h2.text-2xl.font-bold.py-2.text-indigo-600 #{title}
+  .h-100.p-8.bg-white.rounded.text-gray-600.shadow.flex.flex-col.justify-between.dark_bg-gray-800
+    h2.text-2xl.font-bold.py-2.text-indigo-600.dark_text-indigo-400 #{title}
     block
     .mt-8.text-right
       +link-indigo(url, 'Know more') Know more

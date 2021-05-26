@@ -1,10 +1,11 @@
 extends _layout
 block body
-  h1.fw-light.text-center HTML over the wire
-  p.lead.text-muted
+  h1.font-bold.text-5xl.text-center HTML over the wire
+  p.mt-4
     | HTML Over The Wire is a celebration of the simplicity in HTML as the format for carrying data and presentation together, whether this is delivered on the first load or with subsequent dynamic updates.
-  p
+  p.text-center
     each value in values
       +value-tag(value)
-  p.text-center
-    a.btn.btn-primary.my-2(href='https://html-over-the-wire.herokuapp.com') Compare different solutions available
+  .mt-4
+    p.text-center.my-4
+      a.inline-block.bg-indigo-600.text-white.p-4.hover_bg-indigo-700.rounded(href='https://html-over-the-wire.herokuapp.com') Compare different solutions available

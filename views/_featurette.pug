@@ -1,5 +1,5 @@
 mixin featurette(title,src,url)
-  .md_grid.grid-cols-2.gap-4.my-2
+  .md_grid.grid-cols-2.gap-4.my-8
     .order-1
       h2.text-2xl.font-bold.text-indigo-600.mb-2
         | #{title}
@@ -10,7 +10,7 @@ mixin featurette(title,src,url)
         img.mx-auto(width='500' height='500' src=src aria-label='Framework logo')
 
 mixin featurette-alt(title,src,url)
-  .md_grid.grid-cols-2.gap-4.my-2
+  .md_grid.grid-cols-2.gap-4.my-8
     .order-2
       h2.text-2xl.font-bold.text-indigo-600.mb-2
         | #{title}

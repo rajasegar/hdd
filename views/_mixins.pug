@@ -1,16 +1,16 @@
 mixin lg-link(article)
-  a.bg-white.shadow.px-2.py-2.text-gray-600.block.w-full.hover_text-indigo-600.border-gray-200.hover_bg-indigo-100.hover_font-bold(href=article.url, target="_blank")
+  a.bg-white.shadow.px-2.py-2.text-gray-600.block.w-full.hover_text-indigo-600.border-gray-200.hover_bg-indigo-100.hover_font-bold.px-4(href=article.url, target="_blank")
     | #{article.title}
 
 mixin value-tag(value)
   span.mx-2.bg-indigo-100.shadow.text-sm.p-2.rounded.text-indigo-600 #{value}
 
 mixin tw-navbar-gray()
-    nav(class='bg-white border-b-2 border-gray-200')&attributes(attributes)
+    nav(class='bg-white border-b-2 border-gray-200 dark_bg-gray-800 dark_border-gray-700')&attributes(attributes)
       .max-w-7xl.mx-auto.px-2(class='sm_px-6 lg_px-8')
         .relative.flex.items-center.justify-between.h-16
           .absolute.inset-y-0.left-0.flex.items-center(class='sm_hidden')
-            button.inline-flex.items-center.justify-center.p-2.rounded-md.text-gray-400(type='button' class='hover_text-white hover_bg-gray-700 focus_outline-none focus_ring-2 focus_ring-inset focus_ring-white' aria-controls='mobile-menu' aria-expanded='false' _="on click toggle .hidden on #mobile-menu")
+            button#toggle-mobile-menu.inline-flex.items-center.justify-center.p-2.rounded-md.text-gray-400(type='button' class='hover_text-white hover_bg-gray-700 focus_outline-none focus_ring-2 focus_ring-inset focus_ring-white' aria-controls='mobile-menu' aria-expanded='false')
               span.sr-only Open main menu
               svg.block.h-6.w-6(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' aria-hidden='true')
                 path(stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16')
@@ -34,7 +34,7 @@ mixin tw-nav-link-gray(href, active)
   a.px-3.py-2.rounded-md.text-sm.font-medium(
     href=href
     aria-current='page' 
-    class=active === href ? 'bg-gray-900 text-white' :  'text-gray-900 hover_bg-gray-700 hover_text-white'
+    class=active === href ? 'bg-gray-900 text-white dark_bg-indigo-600' :  'text-gray-900 hover_bg-gray-700 hover_text-white dark_text-white'
     )&attributes(attributes)
     block
 
@@ -49,3 +49,15 @@ mixin mobile-nav-link(href, active)
 mixin link-indigo(href, label)
   a.bg-indigo-600.text-white.border-indigo-300.px-4.py-4.shadow-2xl.hover_bg-indigo-700.rounded(href=href, aria-label=label)
     block
+
+mixin toggle-btn()
+  .flex.items-center.justify-center.w-full
+    label.flex.items-center.cursor-pointer(for='toggle-dark-mode')
+      .mr-3.text-gray-500.dark_text-white.text-sm
+        +icon-sun()
+      .relative
+        input#toggle-dark-mode.sr-only(type='checkbox', aria-label="Toggle Dark Mode")
+        .block.bg-gray-600.w-10.h-6.rounded-full
+        .dot.absolute.left-1.top-1.bg-white.w-4.h-4.rounded-full.transition
+      .ml-3.text-gray-500.dark_text-white.text-sm
+        +icon-moon()
