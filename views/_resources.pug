@@ -2,7 +2,7 @@ include _mixins
 
 if videos.length > 0
   section.py-2.container
-    h2.text-center.text-indigo-600.text-3xl.my-2 Talks & Videos
+    h2.text-center.text-indigo-600.text-3xl.my-2.dark_text-indigo-400 Talks & Videos
   .album.py-2.bg-dark
     .container
       .md_grid.grid-cols-3.gap-4
@@ -12,21 +12,21 @@ if videos.length > 0
 
 if articles.length > 0
   section.py-2.container
-    h2.text-center.text-indigo-600.text-3xl.my-2 Blogs & Articles
+    h2.text-center.text-indigo-600.text-3xl.my-2.dark_text-indigo-400 Blogs & Articles
     .list-group
       each article in articles
         +lg-link(article)
 
 if demos.length > 0
   section.py-2.container
-    h2.text-center.text-indigo-600.text-3xl.my-2 Demos & Source Code
+    h2.text-center.text-indigo-600.text-3xl.my-2.dark_text-indigo-400 Demos & Source Code
     .list-group
       each demo in demos
         +lg-link(demo)
 
 if websites.length > 0
   section.py-2.container
-    h2.text-center.text-indigo-600.text-3xl.my-2 Websites
+    h2.text-center.text-indigo-600.text-3xl.my-2.dark_text-indigo-400 Websites
     .list-group
       each website in websites
         +lg-link(website)

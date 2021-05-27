@@ -50,8 +50,12 @@ mixin link-indigo(href, label)
   a.bg-indigo-600.text-white.border-indigo-300.px-4.py-4.shadow-2xl.hover_bg-indigo-700.rounded(href=href, aria-label=label)
     block
 
+mixin link(href, label)
+  a.text-indigo-600.hover_text-indigo-900(href=href, aria-label=label)
+    block
+
 mixin toggle-btn()
-  .flex.items-center.justify-center.w-full
+  .flex.items-center.justify-center.w-full.mx-2
     label.flex.items-center.cursor-pointer(for='toggle-dark-mode')
       .mr-3.text-gray-500.dark_text-white.text-sm
         +icon-sun()

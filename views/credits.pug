@@ -1,34 +1,29 @@
+include _mixins
 main.container.max-w-7xl.mx-auto.px-2.pb-4(class='sm_px-6 lg_px-8')
   .container.mt-3.dark_text-white
     h2.text-2xl.font-bold Image Credits
     ul
       li
-        <a href="https://www.freepik.com/vectors/illustrations">Illustrations vector created by freepik - www.freepik.com</a>
+        +link("https://www.freepik.com/vectors/illustrations") Illustrations vector created by freepik - www.freepik.com
       li
-        <a href="https://www.freepik.com/vectors/abstract">Abstract vector created by vectorjuice - www.freepik.com</a>
+        +link("https://www.freepik.com/vectors/abstract") Abstract vector created by vectorjuice - www.freepik.com
       li
-        <a href="https://www.freepik.com/vectors/work">Work vector created by freepik - www.freepik.com</a>
-      li
-        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdzone.com%2Farticles%2Fangular-server-side-rendering-ssr-made-easy-with-a&psig=AOvVaw3N-_fAo5XYBO2QmFuMvnna&ust=1618806003411000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCMDVsL74hvACFQAAAAAdAAAAABAX">SSR</a>
-      li
-        a(href="https://www.slideshare.net/PatrickSteeleIdem/rediscovering-progressive-html-rendering-with-marko-templates-and-nodejs") Progressive html
-      li
-        a(href="https://www.seobility.net/en/wiki/Progressive_Enhancement") Progressive Enhancement
+        +link("https://www.freepik.com/vectors/work") Work vector created by freepik - www.freepik.com
     h2.text-2xl.font-bold Inspiration
     ul
       li
-        a(href="https://en.wikipedia.org/wiki/Extreme_programming") Extreme Programming
+        +link("https://en.wikipedia.org/wiki/Extreme_programming", "Extreme_programming") Extreme Programming
       li
-        a(href="https://en.wikipedia.org/wiki/Domain-driven_design") Domain Driven Design
+        +link("https://en.wikipedia.org/wiki/Domain-driven_design", "Domain Driven Design") Domain Driven Design
       li
-        a(href="https://abookapart.com/products/sustainable-web-design/") Sustainable Web Design
+        +link("https://abookapart.com/products/sustainable-web-design/", "Sustainable Web Design") Sustainable Web Design
       li
-        a(href="https://htmx.org/essays/locality-of-behaviour") Locality of Behavior
+        +link("https://htmx.org/essays/locality-of-behaviour", "Locality of Behavior") Locality of Behavior
       li
-        a(href="https://htmx.org/essays/complexity-budget") Complexity Budget
+        +link("https://htmx.org/essays/complexity-budget", "Complexity Budget") Complexity Budget
       li
-        a(href="https://macwright.com/2020/10/28/if-not-spas.html") SPA Alternative
+        +link("https://macwright.com/2020/10/28/if-not-spas.html", "SPA Alternative") SPA Alternative
       li
-        a(href="https://resilientwebdesign.com/") Resilient Web Design
+        +link("https://resilientwebdesign.com/", "Resilient Web Design") Resilient Web Design
       li
-        a(href="https://futurefriendlyweb.com/") Future Friendly Web
+        +link("https://futurefriendlyweb.com/", "Future Friendly Web") Future Friendly Web
