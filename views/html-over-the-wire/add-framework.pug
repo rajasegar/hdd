@@ -1,0 +1,23 @@
+extends layout
+include _mixins
+block body
+  h2.mt-4.mb-3 Adding a new Framework
+  p You can add a new framework/library by creating a pull request to the <a target="_blank" href="https://github.com/rajasegar/html_over_the_wire">Github repo</a>.
+  ol
+    li 
+      p Clone the repo
+      pre git clone https://github.com/rajasegar/html_over_the_wire
+    li
+      p Change to the directory and create a new branch
+      pre
+        | cd html_over_the_wire
+        | git checkout -b new-branch-name
+    li
+      p Edit the <strong>data/libs.js</strong> file to add your new framework details.
+      p Please try to fill in most of the property values
+    li
+      p Create a Pull Request against the main branch
+      p We will review and merge the PR asap
+    li
+      p That's it, you have added a new framework!
+

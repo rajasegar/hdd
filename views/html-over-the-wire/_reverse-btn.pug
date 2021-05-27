@@ -1,0 +1,13 @@
+include _mixins
+button#btnReverse.btn.btn-sm.btn-secondary(
+  hx-get="/html-over-the-wire/reverse-timeline?dir=" + dir, 
+  type="button"
+  hx-target="#timeline",
+  hx-swap-oob="true"
+  hx-indicator="#indicator"
+  ) 
+  if dir === 'normal'
+    +icon-arrow-down() 
+  else
+    +icon-arrow-up()
+  |  Reverse Timeline

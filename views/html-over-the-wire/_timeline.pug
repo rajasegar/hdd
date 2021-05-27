@@ -1,0 +1,9 @@
+each lib,index in libs
+  li
+    div(class=index % 2 === 0 ? 'direction-r' : 'direction-l')
+      .flag-wrapper
+        span.flag
+          a(target='_blank' href=lib.github.url) #{lib.name}
+        span.time-wrapper
+          span.time #{lib.releasedIn}
+      .desc #{lib.summary}

@@ -1,0 +1,11 @@
+extends layout
+include _mixins
+block body
+  .d-flex.justify-content-between
+    h3.mt-2 Timeline of different frameworks
+    .mt-2
+      include _reverse-btn
+        
+  include _loader
+  ul#timeline.timeline
+    include _timeline

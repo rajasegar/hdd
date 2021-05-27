@@ -1,0 +1,59 @@
+include _mixins
+.d-flex.justify-content-between
+  h1 #{data.name}
+  .d-flex(hx-get="/html-over-the-wire/github?owner=" + owner + "&repo=" + repo + "&libId=" + data.id, hx-trigger="load", hx-indicator="#indicator")
+    include _github-info
+  .dropdown
+    button.btn.btn-primary.dropdown-toggle(type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false")
+      | Compare with
+    ul.dropdown-menu(aria-labelledby="dropdownMenuButton1")
+      each lib in others
+        li
+          a.dropdown-item(href="/html-over-the-wire/compare?lib1=" + data.id + '&lib2=' +  lib.id) #{lib.name}
+p
+  | #{data.description}
+p Features:
+ul
+  each feature in data.features
+    li= feature
+p 
+  a(href=data.website) Website
+p 
+  a(href=data.github.url) Github
+p 
+  | Released in: #{data.releasedIn}
+p 
+  | Language: #{data.language}
+p 
+  | AJAX: 
+  +yesno(data.ajax)
+p 
+  | History API: 
+  +yesno(data.history)
+p 
+  | Animation: 
+  +yesno(data.animation)
+p 
+  | Web Sockets: 
+  +yesno(data.websockets)
+p 
+  | Server Sent Events: 
+  +yesno(data.sse)
+p 
+  | Language or Framework Agnostic: 
+  +yesno(data.agnostic)
+p 
+  | Extendable: 
+  +yesno(data.extendable)
+p 
+  | Dependency Free: 
+  +yesno(data.dependencyFree)
+p 
+  | IE 11 Compatible: 
+  +yesno(data.ie11)
+p 
+  | Compilation:
+  +yesno(data.nocompilation)
+p 
+  | CDN: 
+  +yesno(data.cdn)

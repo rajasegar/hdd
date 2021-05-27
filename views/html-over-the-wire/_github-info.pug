@@ -1,0 +1,19 @@
+include _mixins
+.ms-2
+  .btn-group.btn-group-sm(role="group" aria-label="Basic outlined example")
+    button.btn.btn-outline-dark(type="button") 
+      +icon-star()
+      |  Stars
+    button.btn.btn-dark(type="button") #{data.github.stars}
+.ms-2
+  .btn-group.btn-group-sm(role="group" aria-label="Basic outlined example")
+    button.btn.btn-outline-dark(type="button") 
+      +icon-fork()
+      |  Forks
+    button.btn.btn-dark(type="button") #{data.github.forks}
+.ms-2
+  .btn-group.btn-group-sm(role="group" aria-label="Basic outlined example")
+    button.btn.btn-outline-dark(type="button") 
+      +icon-issues()
+      |  Issues
+    button.btn.btn-dark(type="button") #{data.github.issues}

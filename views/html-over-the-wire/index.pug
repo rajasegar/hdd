@@ -1,0 +1,50 @@
+extends layout
+include _mixins
+block body
+  h2.mt-4.mb-3 Comparison of different frameworks
+
+  button.btn.btn-primary(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasRight' aria-controls='offcanvasRight') 
+    +icon-funnel()
+    |  Filter
+  include _clear-button
+  include _filter
+  
+
+  include _loader
+  table.table.table-striped
+    thead
+      tr
+        th Name
+        //-th 
+          a(href="#" data-bs-toggle="tooltip" title="Github stars") Stars
+        //-th
+          a(href="#" data-bs-toggle="tooltip" title="Github forks") Forks
+        th
+          a(href="#" data-bs-toggle="tooltip" title="Language the framework is written or based on") Language
+        th AJAX
+        th History
+        th Animation
+        th Sockets
+        th
+          a(href="#" data-bs-toggle="tooltip" title="Server Sent Events?") SSE
+        th
+          a(href="#" data-bs-toggle="tooltip" title="Langauge or Framework Agnostic??") Agnostic
+        th 
+          a(href="#" data-bs-toggle="tooltip" title="Provides an extension mechanism for defining and using extensions?") Extendable
+        th
+          a(href="#" data-bs-toggle="tooltip" title="Is it dependent on any external packages?") Dependency Free
+        th
+          a(href="#" data-bs-toggle="tooltip" title="Internet Explorer 11 compatible") IE 11
+        th
+          a(href="#" data-bs-toggle="tooltip" title="Can be used without any compilation or build pipeline?") No Compilation
+        th
+          a(href="#" data-bs-toggle="tooltip" title="Can be consumed via CDN?") CDN
+    tbody#results
+      include _results
+  .card
+    .card-body
+      figure.text-center
+        blockquote.blockquote
+          p The future of web-based software architectures is already taking form, and this time it’s server-rendered (again). Papa’s got a brand new bag: HTML-over-WebSockets and broadcast everything all the time.
+        figcaption.blockquote-footer
+          | Matt E. Patterson in <cite title="Source Title"><a href="https://alistapart.com/article/the-future-of-web-software-is-html-over-websockets/">The Future of Web Software is HTML-over-WebSockets</a></cite>

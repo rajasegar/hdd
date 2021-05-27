@@ -1,0 +1,103 @@
+extends layout
+include _mixins
+block body
+  h2.mt-4.mb-3 #{left.name} <span class="text-muted">vs</span> #{right.name}
+  table.table.table-striped
+    thead
+      tr
+        th 
+        th #{left.name} 
+        th #{right.name}
+    tbody
+      tr
+        td Website
+        td 
+          a(href=left.website) #{left.name}
+        td 
+          a(href=right.website) #{right.name}
+      tr
+        td Released in
+        td #{left.releasedIn}
+        td #{right.releasedIn}
+      tr
+        td Github Stars
+        td #{left.github.stars}
+        td #{right.github.stars}
+      tr
+        td Github Forks
+        td #{left.github.forks}
+        td #{right.github.forks}
+      tr
+        td Github Issues
+        td #{left.github.issues}
+        td #{right.github.issues}
+      tr
+        td Language
+        td #{left.language}
+        td #{right.language}
+      tr
+        td AJAX
+        td 
+          +yesno(left.ajax)
+        td 
+          +yesno(right.ajax)
+      tr
+        td History
+        td 
+          +yesno(left.history)
+        td 
+          +yesno(right.history)
+      tr
+        td Animation
+        td 
+          +yesno(left.animation)
+        td 
+          +yesno(right.animation)
+      tr
+        td Web Sockets
+        td 
+          +yesno(left.websockets)
+        td 
+          +yesno(right.websockets)
+      tr
+        td Server Sent Events
+        td 
+          +yesno(left.sse)
+        td 
+          +yesno(right.sse)
+      tr
+        td Language Agnostic
+        td 
+          +yesno(left.agnostic)
+        td 
+          +yesno(right.agnostic)
+      tr
+        td Extendable
+        td 
+          +yesno(left.extendable)
+        td 
+          +yesno(right.extendable)
+      tr
+        td DependencyFree
+        td 
+          +yesno(left.dependencyFree)
+        td 
+          +yesno(right.dependencyFree)
+      tr
+        td IE 11 Compatible
+        td 
+          +yesno(left.ie11)
+        td 
+          +yesno(right.ie11)
+      tr
+        td Compilation required?
+        td
+          +yesno(left.compilation)
+        td
+          +yesno(right.compilation)
+      tr
+        td CDN
+        td
+          +yesno(left.cdn)
+        td
+          +yesno(right.cdn)

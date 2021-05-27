@@ -1,0 +1,30 @@
+include _mixins
+each lib in data
+  tr
+    td 
+      a(href=lib.website, target="_blank") #{lib.name}
+    //-td #{lib.github.stars}
+    //-td #{lib.github.forks}
+    td #{lib.language}
+    td 
+      +yesno(lib.ajax)
+    td 
+      +yesno(lib.history)
+    td 
+      +yesno(lib.animation)
+    td 
+      +yesno(lib.websockets)
+    td 
+      +yesno(lib.sse)
+    td 
+      +yesno(lib.agnostic)
+    td 
+      +yesno(lib.extendable)
+    td 
+      +yesno(lib.dependencyFree)
+    td 
+      +yesno(lib.ie11)
+    td
+      +yesno(lib.nocompilation)
+    td
+      +yesno(lib.cdn)
