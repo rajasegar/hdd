@@ -1,10 +1,11 @@
 mixin youtube-card(video)
-  .col
-    .h-100.p-4.bg-white.rounded.text-gray-600.shadow.dark_bg-gray-800      
-      iframe(width="100%" height="225" src="https://www.youtube.com/embed/" + video.id title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-      .card-body.dark_text-white
-        p.card-text
-          block
-        .flex.flex-row.justify-between.items-center
+  .my-4.flex.flex-col
+    .flex-1.p-4.bg-white.rounded.text-gray-600.shadow.dark_bg-gray-800      
+      .flex.flex-col
+        iframe(width="100%" height="225" src="https://www.youtube.com/embed/" + video.id title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        .dark_text-white.mt-4
+          p.card-text
+            block
+        .flex.flex-row.justify-between.items-center.mt-4
           small #{video.year}
           small.text-muted #{video.duration} mins

@@ -5,7 +5,7 @@ if videos.length > 0
     h2.text-center.text-indigo-600.text-3xl.my-2 Talks & Videos
   .album.py-2.bg-dark
     .container
-      .grid.grid-cols-3.gap-4
+      .md_grid.grid-cols-3.gap-4
         each video in videos
           +youtube-card(video)
             | #{video.description}
