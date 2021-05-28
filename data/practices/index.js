@@ -8,6 +8,9 @@ const progressiveEnhancement = require('./progressive-enhancement');
 const monolith = require('./monolith');
 const cdn = require('./cdn');
 const avoidClientState = require('./avoid-state-on-client');
+const reduceImages = require('./reduce-images');
+const optimizeImages = require('./optimize-images');
+const cleanCode = require('./clean-code');
 
 module.exports = {
   'html-over-the-wire': htmlOverTheWire,
@@ -20,4 +23,7 @@ module.exports = {
   monolith,
   cdn,
   'avoid-state-on-client': avoidClientState,
+  'reduce-images': reduceImages,
+  'optimize-images': optimizeImages,
+  'clean-code': cleanCode,
 };
